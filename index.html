@@ -3,17 +3,53 @@
 
 <head>
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="index.css">
     <title>Awareness Quiz</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
+    <style>
+        #panel,
+        .flip {
+            font-size: 16px;
+            padding: 10px;
+            text-align: center;
+            background-image: linear-gradient(#e9ebeb, #5f5f5f);
+            color: rgb(118, 172, 172);
+            border: solid 1px #1b1b1b;
+            margin: auto;
+            text-shadow: .5px .5px 1px black;
+            font-family: 'Special Elite', cursive;
+            box-shadow: 5px 5px 5px whitesmoke;
+        }
+
+        #panel {
+            display: none;
+        }
+    </style>
 
 </head>
 
 
 <body>
+    <p class="flip" onclick="myFunction()">HERE!</p>
+
+    <div id="panel">
+        <h2>Welcome the the Self-Awareness Test!</h2>
+        <p>If you are brave enough to take this test you may find out how people really percieve you.</p>
+        <p>While it can be shocking to find out how other people really percieve you, don't be afraid.</p>
+        <p>Take the test and become a better person.</p>
+
+        <button class="continueStyling">Continue</button>
+    </div>
+
+    <script>
+        function myFunction() {
+            document.getElementById("panel").style.display = "block";
+        }
+    </script>
 
     <div class="loginPageMargins">
         <div class="areStyling">Are </div>
@@ -25,13 +61,15 @@
         <div class="pressStyling">Press </div>
         <div class="onStyling">On </div>
         <div class="hereStyling">HERE ! </div>
-        <button class="loginButton" onclick="">ENTER</button>
-        <br></br>
     </div>
+
+    <hr class="lineStyling">
+    </hr>
 
 </body>
 
 <div id="root"></div>
 <script src="bundle.js"></script>
+<script src="main.js" charset="utf-8"></script>
 
 </html>

@@ -7,14 +7,15 @@ body {
 .loginPageMargins {
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-shadow: 2px 2px 1px white;
     font-size: 100%;
     background-image: linear-gradient(#e2e2e2,#727272);
     margin-left: 30%;
     margin-right: 30%;
     border: 1px solid black;
     border-radius: 30%;
-    margin-top: 5px;
+    margin-top: 4px;
+    box-shadow: 5px 5px 20px white;
+    z-index: 3;
 }
 
 @media (min-width: 600px) {
@@ -30,49 +31,59 @@ body {
     margin-top: 10px;
     font-family: 'Indie Flower', cursive;
     color: red;
+    text-shadow: 2px 2px 1px white;
 }
 
 .youStyling {
     font-family: 'Indie Flower', cursive;
+    text-shadow: 2px 2px 1px white;
 }
 
 .awareStyling {
     margin-bottom: 15px;
     font-family: 'Permanent Marker', cursive;
     font-weight: bold;
+    text-shadow: 2px 2px 1px white;
 }
 
 .doStyling {
     font-family: 'Indie Flower', cursive;
     color: red;
+    text-shadow: 2px 2px 1px white;
 }
 
 .youStyling {
     font-family: 'Indie Flower', cursive;
+    text-shadow: 2px 2px 1px white;
 }
 
 .dareStyling {
     margin-bottom: 15px;
     font-family: 'Permanent Marker', cursive;
     font-weight: bold;
+    text-shadow: 2px 2px 1px white;
 }
 
 .pressStyling {
     font-family: 'Indie Flower', cursive;
     color: red;
+    text-shadow: 2px 2px 1px white;
 }
 
 .onStyling {
     font-family: 'Indie Flower', cursive;
+    text-shadow: 2px 2px 1px white;
 }
 
 .hereStyling {
     margin-bottom: 15px;
     font-family: 'Permanent Marker', cursive;
     font-weight: bold;
+    color: rgb(118, 172, 172);
+    text-shadow: .5px .5px 1px black;
 }
 
-.loginButton {
+.continueStyling {
     margin-top: 3px;
     background-image: linear-gradient(#aff5ef,#05978b);
     border-radius: 5%;
@@ -82,7 +93,7 @@ body {
     font-family: 'Special Elite', cursive;
 }
 
-.loginButton:hover {
+.continueStyling:hover {
     margin-top: 3px;
     background-image: linear-gradient(#aff5ef,#036d64);
     border-radius: 5%;
@@ -90,11 +101,19 @@ body {
     text-shadow: 2px 2px 2px rgb(53, 52, 52);
     color: white;
 }
-.loginButton:active {
+.continueStyling:active {
     margin-top: 3px;
     background-image: linear-gradient(#aff5ef,#023531);
     border-radius: 5%;
     box-shadow: 2px 2px 2px rgb(53, 52, 52);
     text-shadow: 2px 2px 2px rgb(53, 52, 52);
     color: white;
+}
+
+.lineStyling {
+    font-weight: bold;
+    box-shadow: 2px 2px 2px black;
+    color: black;
+    z-index: -1;
+    margin-top: 4px;
 }
