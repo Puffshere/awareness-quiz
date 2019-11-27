@@ -5,4 +5,3 @@ function myFunction() {
 function myFunctionClose() {
     document.getElementById("panel").style.display = "none";
 }
-
