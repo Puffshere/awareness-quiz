@@ -92,6 +92,8 @@ body {
     color: white;
     font-family: 'Special Elite', cursive;
     margin-bottom: 24px;
+    padding-right: 15px;
+    padding-left: 12px;
 }
 
 .continueStyling:hover {
@@ -130,18 +132,6 @@ body {
     height: 20px;
     z-index: 3;
     }
-
-
-    body
-{
-  margin: 0;
-  padding: 0;
-  
-  /* make it look decent enough */
-  background: #232323;
-  color: #cdcdcd;
-  font-family: "Avenir Next", "Avenir", sans-serif;
-}
 
 a
 {
@@ -282,4 +272,11 @@ a:hover
 #menuToggle input:checked ~ ul
 {
   transform: none;
+}
+
+.bottomScreenStyling {
+    background-image: linear-gradient(#e2e2e2,#202020);   
+    color: rgb(216, 216, 216);
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
 }
