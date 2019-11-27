@@ -11,6 +11,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
+        .container {
+            display: inline-block;
+            cursor: pointer;
+            float: right;
+        }
+
+        .bar1,
+        .bar2,
+        .bar3 {
+            width: 35px;
+            height: 5px;
+            background-color: #333;
+            margin: 6px 0;
+            transition: 0.4s;
+        }
+
+        .change .bar1 {
+            -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+            transform: rotate(-45deg) translate(-9px, 6px);
+        }
+
+        .change .bar2 {
+            opacity: 0;
+        }
+
+        .change .bar3 {
+            -webkit-transform: rotate(45deg) translate(-8px, -8px);
+            transform: rotate(45deg) translate(-8px, -8px);
+        }
+    </style>
+
+    <style>
         #panel,
         .flip {
             font-size: 16px;
@@ -23,6 +55,7 @@
             text-shadow: .5px .5px 1px black;
             font-family: 'Special Elite', cursive;
             box-shadow: 5px 5px 5px whitesmoke;
+            position: absolute;
         }
 
         #panel {
@@ -32,44 +65,49 @@
 
 </head>
 
-
 <body>
-    <p class="flip" onclick="myFunction()">HERE!</p>
-
-    <div id="panel">
-        <h2>Welcome the the Self-Awareness Test!</h2>
-        <p>If you are brave enough to take this test you may find out how people really percieve you.</p>
-        <p>While it can be shocking to find out how other people really percieve you, don't be afraid.</p>
-        <p>Take the test and become a better person.</p>
-
-        <button class="continueStyling">Continue</button>
+    <div class="container" onclick="myFunction2(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
     </div>
 
     <script>
-        function myFunction() {
-            document.getElementById("panel").style.display = "block";
+        function myFunction2(x) {
+            x.classList.toggle("change");
         }
+
     </script>
 
-    <div class="loginPageMargins">
-        <div class="areStyling">Are </div>
-        <div class='youStyling'>You </div>
-        <div class="awareStyling">AWARE? </div>
-        <div class="doStyling">Do </div>
-        <div class="youStyling">You </div>
-        <div class="dareStyling">DARE? </div>
-        <div class="pressStyling">Press </div>
-        <div class="onStyling">On </div>
-        <div class="hereStyling">HERE ! </div>
-    </div>
+    <p class="flip" onclick="myFunction()">HERE!</p>
 
+    <div id="panel">
+        <h2 class="welcomeStyling">Welcome the the Self-Awareness Test!</h2>
+        <p>If you are brave enough to take this test you may find out how people really percieve you.</p>
+        <p>While it can be shocking to find out how other people really percieve you, don't be afraid.</p>
+        <p>Take the test and become a better person.</p>
+        <br>
+        <button class="continueStyling" onclick="myFunctionClose()">Continue</button>
+    </div>
+    <span><img src="man.png" class="man">
+        <div class="loginPageMargins">
+            <div class="areStyling">Are you sure</div>
+            <div class='youStyling'>You </div>
+            <div class="awareStyling">AWARE? </div>
+            <div class="doStyling">Do </div>
+            <div class="youStyling">You </div>
+            <div class="dareStyling">DARE? </div>
+            <div class="pressStyling">Press </div>
+            <div class="onStyling">On </div>
+            <div class="hereStyling">HERE ! </div>
+        </div>
+    </span>
+    <br></br>
     <hr class="lineStyling">
     </hr>
-
 </body>
 
 <div id="root"></div>
-<script src="bundle.js"></script>
 <script src="main.js" charset="utf-8"></script>
 
 </html>
