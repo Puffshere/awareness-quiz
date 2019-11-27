@@ -1,5 +1,5 @@
 body {
-    background-image: linear-gradient(#44acf1,#978a7d);
+    background-image: linear-gradient(#56544e,#978a7d);
     height: 100vh;
     min-width: 100%;
 }
@@ -13,9 +13,9 @@ body {
     margin-right: 30%;
     border: 1px solid black;
     border-radius: 1%;
-    margin-top: 4px;
-    box-shadow: 5px 5px 20px white;
-    z-index: 3;
+    margin-top: -6px;
+    box-shadow: 5px 5px 20px #2b0707;
+    z-index: 1;
 }
 
 @media (min-width: 600px) {
@@ -118,7 +118,8 @@ body {
     box-shadow: 2px 2px 2px black;
     color: black;
     z-index: -1;
-    margin-top: 4px;
+    margin-top: -9px;
+    position: absolute;
 }
 
 .welcomeStyling {
@@ -146,6 +147,15 @@ a:hover
   color: tomato;
 }
 
+
+.bottomScreenStyling {
+    background-image: linear-gradient(#e2e2e2,#2b0000);   
+    color: rgb(255, 231, 207);
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+    font-family: 'Abril Fatface', cursive;
+    margin-top: 8px;
+}
 /* #menuToggle
 {
   display: block;
@@ -251,12 +261,3 @@ a:hover
 {
   transform: none;
 } */
-
-.bottomScreenStyling {
-    background-image: linear-gradient(#e2e2e2,#2b0000);   
-    color: rgb(255, 231, 207);
-    text-align: center;
-    text-shadow: 1px 1px 1px black;
-    font-family: 'Abril Fatface', cursive;
-    margin-top: -18px;
-}
