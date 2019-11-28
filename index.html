@@ -61,10 +61,37 @@
             box-shadow: 5px 5px 5px #2b0707;
             position: absolute;
             margin-top: -15px;
-            z-index: 1;
+            z-index: 2;
         }
 
         #panel {
+            display: none;
+        }
+    </style>
+
+    <style>
+        #start,
+        .flip1 {
+            font-size: 16px;
+            padding: 15px;
+            text-align: center;
+            background-image: linear-gradient(#e9ebeb, #5f5f5f);
+            color: rgb(118, 172, 172);
+            border: solid 1px #1b1b1b;
+            /* margin: auto; */
+            text-shadow: 0.5px 0.5px 1px black;
+            font-family: 'Special Elite', cursive;
+            box-shadow: 5px 5px 5px #2b0707;
+            position: absolute;
+            margin-top: 0px;
+            z-index: 1;
+            min-height: 237px;
+            margin-left: 173px;
+            min-width: 230px;
+            z-index: 1;
+        }
+
+        #start {
             display: none;
         }
     </style>
@@ -95,10 +122,24 @@
         <p>While it can be shocking to find out how other people really percieve you, don't be afraid.</p>
         <p>Take the test and become a better person.</p>
         <br>
-        <button class="continueStyling" onclick="myFunctionClose()">Back</button>
+        <button class="continueStyling" onclick="myFunctionStart(), myFunctionClose()">Start</button>
     </div>
-    <span><img src="man.png" class="man">
-        <img src="bubble.png" class="bubble">
+
+    <div id="start">
+        <h2 class="welcomeStyling1">fcvdcvsfbgbgfb</h2>
+        <p>gcbgbgbgbgb</p>
+        <p>gfbgbgbddgbgfb</p>
+        <p>gbgbgbgbgfbgbgfbgfbg</p>
+        <br>
+        <!-- <button class="continueStyling" onclick="myFunctionClose()">Start</button> -->
+    </div>
+
+    <span>
+        <img src="man.png" class="man">
+        <!-- <div class="manBubbleWords"> -->
+        <img src="boyBubble.png" class="boyBubble" />
+        <!-- <div class="manWords">I think people like me?</div>
+        </div> -->
         <div class="loginPageMargins">
             <div class="areStyling">Are</div>
             <div class='youStyling'>You </div>
@@ -110,6 +151,8 @@
             <div class="onStyling">On </div>
             <div class="hereStyling">HERE ! </div>
         </div>
+        <img src="woman.png" class="woman">
+        <img src="girlBubble.png" class="girlBubble">
     </span>
     <!-- <br></br> -->
     <hr class="lineStyling">

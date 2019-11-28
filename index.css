@@ -16,7 +16,7 @@ body {
     border-radius: 1%;
     /* margin-top: -15px; */
     box-shadow: 5px 5px 20px #2b0707;
-    z-index: 1;
+    z-index: -2;
 }
 
 @media (min-width: 600px) {
@@ -127,6 +127,10 @@ body {
      color: #790707f2;
 }
 
+.welcomeStyling1 {
+     color: #076279f2;
+}
+
 .man {
     background-repeat: no-repeat;
     width: 80px;
@@ -136,12 +140,42 @@ body {
     position: absolute;
 }
 
-.bubble {
+.woman {
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 190px;
+    z-index: -1;
+    margin: -189px 1px 1px 475px;
+    position: absolute;
+}
+
+.boyBubble {
     background-repeat: no-repeat;
     width: 90px;
     height: 90px;
     margin: -10px 1px 1px 85px;
     position: absolute;
+    z-index: 1;
+}
+
+.girlBubble {
+    background-repeat: no-repeat;
+    width: 90px;
+    height: 90px;
+    margin: -250px 1px 1px 410px;
+    position: absolute;
+}
+
+.manBubbleWords {
+    /* text-align: center;
+    font-size: 50%; */
+    position: relative;
+}
+
+.manWords {
+    text-align: center;
+    font-size: 50%; 
+    z-index: 2;
 }
 
 a {
@@ -279,7 +313,6 @@ a:hover
   text-shadow: 1px 1px 1px #c5c4be;
   color: rgb(88, 41, 41);
   text-decoration: none;
-
 }
 
 #menu li:focus
