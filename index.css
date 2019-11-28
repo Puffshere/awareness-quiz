@@ -10,13 +10,14 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 100%;
     background-image: linear-gradient(#e2e2e2,#727272);
-    margin-left: 30%;
+    margin-left: 29%;
     margin-right: 30%;
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 1%;
     /* margin-top: -15px; */
     box-shadow: 5px 5px 20px #2b0707;
     z-index: -2;
+    min-width: 235px;
 }
 
 @media (min-width: 600px) {
