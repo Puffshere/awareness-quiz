@@ -136,6 +136,14 @@ body {
     position: absolute;
 }
 
+.bubble {
+    background-repeat: no-repeat;
+    width: 90px;
+    height: 90px;
+    margin: -10px 1px 1px 85px;
+    position: absolute;
+}
+
 a {
   text-decoration: none;
   color: #232323;
@@ -157,10 +165,7 @@ a:hover
     margin-top: 8px;
 }
 
-.container {
-   
-}
-/* #menuToggle
+#menuToggle
 {
   display: block;
   position: relative;
@@ -264,4 +269,4 @@ a:hover
 #menuToggle input:checked ~ ul
 {
   transform: none;
-} */
+}
