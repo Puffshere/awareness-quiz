@@ -9,9 +9,9 @@
     <link rel="stylesheet" type="text/css" href="index.css">
     <title>Awareness Quiz</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Permanent+Marker&display=swap" rel="stylesheet">
 
-    <style>
+    <!-- <style>
         .container {
             margin-top: -10 !important;
             display: inline-block;
@@ -42,7 +42,9 @@
             -webkit-transform: rotate(45deg) translate(-8px, -8px);
             transform: rotate(45deg) translate(-8px, -8px);
         }
-    </style>
+    </style> -->
+
+
 
     <style>
         #panel,
@@ -70,6 +72,8 @@
 </head>
 
 <body>
+
+
     <div class="container" onclick="myFunction2(this)">
         <div class="bar1"></div>
         <div class="bar2"></div>
@@ -94,7 +98,7 @@
         <button class="continueStyling" onclick="myFunctionClose()">Back</button>
     </div>
     <span><img src="man.png" class="man">
-    <img src="bubble.png" class="bubble">
+        <img src="bubble.png" class="bubble">
         <div class="loginPageMargins">
             <div class="areStyling">Are</div>
             <div class='youStyling'>You </div>
@@ -109,11 +113,39 @@
     </span>
     <!-- <br></br> -->
     <hr class="lineStyling">
-</hr>
+    </hr>
 
     <div class="bottomScreenStyling">
-Self-Awareness Test
+        Self-Awareness Test
     </div>
+    <nav role="navigation">
+        <div id="menuToggle">
+
+            <input type="checkbox" />
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <ul id="menu">
+                <a href="#">
+                    <li>Dashboard</li>
+                </a>
+                <a href="#">
+                    <li>About</li>
+                </a>
+                <a href="#">
+                    <li>Info</li>
+                </a>
+                <a href="#">
+                    <li>Contact</li>
+                </a>
+                <a href="https://www.assessments24x7.com/" target="_blank">
+                    <li>Show me more</li>
+                </a>
+            </ul>
+        </div>
+    </nav>
 </body>
 
 <div id="root"></div>
