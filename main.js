@@ -9,3 +9,7 @@ function myFunctionClose() {
 function myFunctionStart() {
     document.getElementById("start").style.display = "block";
 }
+
+function myFunctionQ1() {
+    document.getElementById("question1").style.display = "block";
+}
