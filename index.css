@@ -14,7 +14,6 @@ body {
     margin-right: 30%;
     border: 2px solid black;
     border-radius: 1%;
-    /* margin-top: -15px; */
     box-shadow: 5px 5px 20px #2b0707;
     z-index: -2;
     min-width: 235px;
@@ -44,7 +43,6 @@ body {
 .awareStyling {
     margin-bottom: 15px;
     font-family: 'Permanent Marker', cursive;
-    /* font-weight: bold; */
     text-shadow: 2px 2px 1px #a79292;
 }
 
@@ -62,7 +60,6 @@ body {
 .dareStyling {
     margin-bottom: 15px;
     font-family: 'Permanent Marker', cursive;
-    /* font-weight: bold; */
     text-shadow: 2px 2px 1px #a79292;
 }
 
@@ -196,8 +193,6 @@ body {
 }
 
 .manBubbleWords {
-    /* text-align: center;
-    font-size: 50%; */
     position: relative;
 }
 
@@ -228,7 +223,7 @@ a:hover
     margin-top: 8px;
 }
 
-/* Hamburger Styling */
+/***************************************************** Hamburger Styling ***********************************************************/
 
 #menuToggle
 {
@@ -364,9 +359,6 @@ a:hover
     float:left;
   }
 
-  /* :not(:checked) is a filter, so that browsers that don’t support :checked don’t 
-    follow these rules. Every browser that supports :checked also supports :not(), so
-    it doesn’t make the test unnecessarily selective */
   .rating:not(:checked) > input {
       position:absolute;
       top:-9999px;
@@ -376,12 +368,10 @@ a:hover
   .rating:not(:checked) > label {
       float:right;
       width:1em;
-      /* padding:0 .1em; */
       overflow:hidden;
       white-space:nowrap;
       cursor:pointer;
       font-size:100%;
-      /* line-height:1.2; */
       color:#ddd;
   }
 
@@ -417,6 +407,6 @@ a:hover
   }
 
   .row {
-    margin-right: 0px;
-    margin-left: 5px;
-}
+      margin-right: 0px;
+      margin-left: 5px;
+  }

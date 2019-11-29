@@ -44,7 +44,6 @@
             background-image: linear-gradient(#e9ebeb, #5f5f5f);
             color: rgb(118, 172, 172);
             border: solid 1px #1b1b1b;
-            /* margin: auto; */
             text-shadow: 0.5px 0.5px 1px black;
             font-family: 'Special Elite', cursive;
             box-shadow: 5px 5px 5px #2b0707;
@@ -72,7 +71,6 @@
             background-image: linear-gradient(#e9ebeb, #5f5f5f);
             color: rgb(118, 172, 172);
             border: solid 1px #1b1b1b;
-            /* margin: auto; */
             text-shadow: 0.5px 0.5px 1px black;
             font-family: 'Special Elite', cursive;
             box-shadow: 5px 5px 5px #2b0707;
@@ -87,6 +85,33 @@
         }
 
         #question1 {
+            display: none;
+        }
+    </style>
+
+    <style>
+        #question2,
+        .flip1 {
+            font-size: 16px;
+            padding: 15px;
+            text-align: center;
+            background-image: linear-gradient(#e9ebeb, #5f5f5f);
+            color: rgb(118, 172, 172);
+            border: solid 1px #1b1b1b;
+            text-shadow: 0.5px 0.5px 1px black;
+            font-family: 'Special Elite', cursive;
+            box-shadow: 5px 5px 5px #2b0707;
+            position: absolute;
+            margin-top: 0px;
+            z-index: 1;
+            min-height: 237px;
+            margin-left: 168px;
+            min-width: 234.5px;
+            z-index: 1;
+            max-height: 237px;
+        }
+
+        #question2 {
             display: none;
         }
     </style>
@@ -160,15 +185,46 @@
             </div>
         </div>
         <br>
-        <button class="continueStyling1" onclick="myFunctionQ1()">Next</button>
+        <button class="continueStyling1" onclick="myFunctionQ2()">Next</button>
+    </div>
+
+    <div id="question2">
+        <h2 class="welcomeStyling1">Rate your</h2>
+        <h2 class="welcomeStyling1">dependability.</h2>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="rating">
+                    <input type="radio" id="star010" name="rating" value="10" /><label for="star010" title="Rocks!">5
+                        stars</label>
+                    <input type="radio" id="star09" name="rating" value="9" /><label for="star09" title="Rocks!">4
+                        stars</label>
+                    <input type="radio" id="star08" name="rating" value="8" /><label for="star08" title="Pretty good">3
+                        stars</label>
+                    <input type="radio" id="star07" name="rating" value="7" /><label for="star07" title="Pretty good">2
+                        stars</label>
+                    <input type="radio" id="star06" name="rating" value="6" /><label for="star06" title="Meh">1
+                        star</label>
+                    <input type="radio" id="star05" name="rating" value="5" /><label for="star05" title="Meh">5
+                        stars</label>
+                    <input type="radio" id="star04" name="rating" value="4" /><label for="star04" title="Kinda bad">4
+                        stars</label>
+                    <input type="radio" id="star03" name="rating" value="3" /><label for="star03" title="Kinda bad">3
+                        stars</label>
+                    <input type="radio" id="star02" name="rating" value="2" /><label for="star02" title="Sucks big tim">2
+                        stars</label>
+                    <input type="radio" id="star01" name="rating" value="1" /><label for="star01" title="Sucks big time">1
+                        star</label>
+                </div>
+            </div>
+        </div>
+        <br>
+        <button class="continueStyling1" onclick="myFunctionQ3()">Next</button>
     </div>
 
     <span>
         <img src="man.png" class="man">
-        <!-- <div class="manBubbleWords"> -->
         <img src="boyBubble.png" class="boyBubble" />
-        <!-- <div class="manWords">I think people like me?</div>
-        </div> -->
         <div class="loginPageMargins">
             <div class="areStyling">Are</div>
             <div class='youStyling'>You </div>
@@ -183,22 +239,17 @@
         <img src="woman.png" class="woman">
         <img src="girlBubble.png" class="girlBubble">
     </span>
-    <!-- <br></br> -->
     <hr class="lineStyling">
     </hr>
-
     <div class="bottomScreenStyling">
         Self-Awareness Test
     </div>
     <nav role="navigation">
         <div id="menuToggle">
-
             <input type="checkbox" />
-
             <span></span>
             <span></span>
             <span></span>
-
             <ul id="menu">
                 <a href="#">
                     <li>Dashboard</li>

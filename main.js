@@ -13,3 +13,7 @@ function myFunctionStart() {
 function myFunctionQ1() {
     document.getElementById("question1").style.display = "block";
 }
+
+function myFunctionQ2() {
+    document.getElementById("question2").style.display = "block";
+}
