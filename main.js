@@ -1,3 +1,7 @@
+// function myFunctionWindow() {
+//     document.getElementById("panel").style.display = "block";
+// }
+
 function myFunction() {
     document.getElementById("panel").style.display = "block";
 }
@@ -52,4 +56,9 @@ function myFunctionQ10() {
 
 function myFunctionFinish() {
     document.getElementById("finish").style.display = "block";
+}
+
+
+function myFunctionLogin() {
+    document.getElementById("id01").style.display = "block"; 
 }
