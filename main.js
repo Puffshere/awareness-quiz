@@ -17,3 +17,39 @@ function myFunctionQ1() {
 function myFunctionQ2() {
     document.getElementById("question2").style.display = "block";
 }
+
+function myFunctionQ3() {
+    document.getElementById("question3").style.display = "block";
+}
+
+function myFunctionQ4() {
+    document.getElementById("question4").style.display = "block";
+}
+
+function myFunctionQ5() {
+    document.getElementById("question5").style.display = "block";
+}
+
+function myFunctionQ6() {
+    document.getElementById("question6").style.display = "block";
+}
+
+function myFunctionQ7() {
+    document.getElementById("question7").style.display = "block";
+}
+
+function myFunctionQ8() {
+    document.getElementById("question8").style.display = "block";
+}
+
+function myFunctionQ9() {
+    document.getElementById("question9").style.display = "block";
+}
+
+function myFunctionQ10() {
+    document.getElementById("question10").style.display = "block";
+}
+
+function myFunctionFinish() {
+    document.getElementById("finish").style.display = "block";
+}
