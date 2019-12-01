@@ -112,6 +112,37 @@ body {
     color: white;
 }
 
+.aboutStylingBtn {
+    background-image: linear-gradient(#aff5ef,#05978b);
+    border-radius: 5%;
+    box-shadow: 2px 2px 2px rgb(53, 52, 52);
+    text-shadow: 2px 2px 2px rgb(53, 52, 52);
+    color: white;
+    font-family: 'Special Elite', cursive;
+    margin-bottom: 24px;
+    padding-right: 15px;
+    padding-left: 12px;
+    max-height: 35px;
+    max-width: 58px;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+.aboutStylingBtn:hover {
+    background-image: linear-gradient(#aff5ef,#036d64);
+    border-radius: 5%;
+    box-shadow: 2px 2px 2px rgb(53, 52, 52);
+    text-shadow: 2px 2px 2px rgb(53, 52, 52);
+    color: white;
+}
+.aboutStylingBtn:active {
+    background-image: linear-gradient(#aff5ef,#023531);
+    border-radius: 5%;
+    box-shadow: 2px 2px 2px rgb(53, 52, 52);
+    text-shadow: 2px 2px 2px rgb(53, 52, 52);
+    color: white;
+}
+
 .continueStyling1 {
     margin-top: -2px;
     background-image: linear-gradient(#aff5ef,#05978b);
@@ -540,24 +571,24 @@ span.psw {
     color: white;
 }
 
-/* Add Zoom Animation */
-/* .animate {
+/* Add Zoom Animation  */
+.animate {
   -webkit-animation: animatezoom 0.6s;
   animation: animatezoom 0.6s
-} */
+}
 
-/* @-webkit-keyframes animatezoom {
+@-webkit-keyframes animatezoom {
   from {-webkit-transform: scale(0)} 
   to {-webkit-transform: scale(1)}
-} */
+}
   
-/* @keyframes animatezoom {
+@keyframes animatezoom {
   from {transform: scale(0)} 
   to {transform: scale(1)}
-} */
+}
 
 /* Change styles for span and cancel button on extra small screens */
-/* @media screen and (max-width: 300px) {
+@media screen and (max-width: 300px) {
   span.psw {
      display: block;
      float: none;
@@ -565,4 +596,9 @@ span.psw {
   .cancelbtn {
      width: 100%;
   }
-} */
+}
+
+.aboutStyling {
+    font-size: 12px;
+    margin-bottom: -35px;
+}
