@@ -10,6 +10,10 @@ function myFunctionClose() {
     document.getElementById("panel").style.display = "none";
 }
 
+function myFunctionCloseAbout() {
+    document.getElementById("panel1").style.display = "none";
+}
+
 function myFunctionStart() {
     document.getElementById("start").style.display = "block";
 }
@@ -61,4 +65,8 @@ function myFunctionFinish() {
 
 function myFunctionLogin() {
     document.getElementById("id01").style.display = "block"; 
+}
+
+function myFunctionAbout() {
+    document.getElementById("panel1").style.display = "block";
 }
