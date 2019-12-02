@@ -19,7 +19,7 @@
             font-size: 16px;
             padding: 15px;
             text-align: center;
-            background-image: linear-gradient(#e9ebeb, #5f5f5f);
+            background-image: linear-gradient(#e9ebebed, #5f5f5f);
             color: rgb(118, 172, 172);
             border: solid 1px #1b1b1b;
             margin: auto;
@@ -32,6 +32,29 @@
         }
 
         #panel {
+            display: none;
+        }
+    </style>
+
+    <style>
+        #panel2,
+        .flip3 {
+    font-size: 16px;
+    padding: 15px;
+    text-align: center;
+    background-image: linear-gradient(#2c5a5aed, #d6d3d3);
+    color: rgb(157, 232, 232);
+    border: solid 1px #1b1b1b;
+    margin: auto;
+    text-shadow: 0.5px 0.5px 1px black;
+    font-family: 'Special Elite', cursive;
+    box-shadow: 5px 5px 5px #2b0707;
+    position: absolute;
+    margin-top: -15px;
+    z-index: 2;
+}
+
+        #panel2 {
             display: none;
         }
     </style>
@@ -416,9 +439,9 @@
     </div>
 </div>
 
-    <div id="panel1">
+    <div id="panel2">
         <div class="animate">
-            <h2 class="welcomeStyling">Welcome to the about page!</h2>
+            <h2 class="welcomeStyling2">Welcome to the about page!</h2>
             <div class="aboutStyling">
                 <p>This quiz is designed to test your self-awareness by compairing your answers with a group of answers given by the people you choose to take part in your quiz.</p>
                 <p>After completing your quiz pass it on to friends and every five participants will return you a little more self understanding.</p>
@@ -438,6 +461,8 @@
         <br>
         <button class="continueStyling1" onclick="myFunctionQ1()">Next</button>
     </div>
+
+    <div class="questions">
 
     <!--------------------------------------------------------- question1 ---------------------------------------------------------->
 
@@ -866,6 +891,7 @@
         <br>
         <button class="continueStyling2" onclick="myFunctionFinish()">Next</button>
     </div>
+</div>
 
     <!--------------------------------------------------------- Finsih ---------------------------------------------------------->
 

@@ -11,7 +11,7 @@ function myFunctionClose() {
 }
 
 function myFunctionCloseAbout() {
-    document.getElementById("panel1").style.display = "none";
+    document.getElementById("panel2").style.display = "none";
 }
 
 function myFunctionStart() {
@@ -68,5 +68,5 @@ function myFunctionLogin() {
 }
 
 function myFunctionAbout() {
-    document.getElementById("panel1").style.display = "block";
+    document.getElementById("panel2").style.display = "block";
 }
