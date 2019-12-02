@@ -83,6 +83,31 @@
         </style>
 
         <style>
+            #dashboardModel,
+            .flip5 {
+                font-size: 16px;
+                padding: 15px;
+                text-align: center;
+                background-image: linear-gradient(#3e3c38f2, #aba7a3);
+                color: rgb(157, 232, 232);
+                border: solid 1px #1b1b1b;
+                margin: auto;
+                text-shadow: 0.5px 0.5px 1px black;
+                font-family: 'Special Elite', cursive;
+                box-shadow: 5px 5px 5px #2b0707;
+                position: absolute;
+                margin-top: -15px;
+                z-index: 2;
+                min-width: 578px;
+                min-height: 290px;
+            }
+
+            #dashboardModel {
+                display: none;
+            }
+        </style>
+
+        <style>
             #panel1 {
                 font-size: 25px;
                 padding: 15px;
@@ -464,6 +489,17 @@
         </div>
     </div>
 
+    <div id="dashboardModel">
+        <div class="animate">
+            <h2 class="welcomeStyling4">Welcome to the dashboard!</h2>
+            <div class="dashboardStyling">
+               
+            </div>
+            <br>
+            <button class="aboutStylingBtn" onclick="myFunctionDashboardClose()">Back</button>
+        </div>
+    </div>
+
     <div id="panel2">
         <div class="animate">
             <h2 class="welcomeStyling2">Welcome to the about page!</h2>
@@ -485,7 +521,7 @@
         <div class="animate">
             <h2 class="welcomeStyling3">Welcome to the Contact page!</h2>
             <div class="aboutStyling">
-                <p>If you would like to contact the caretaker of this quiz to report any "malfuntions", you can do so by 
+                <p>If you would like to contact the caretaker of this quiz to report any "malfuntions", you can do so by
                     emailing Jim "The Web Man", at shawncurtistaylor@hotmail.com.</p>
                 <p>Jim also will respond to telegrams, faxs, and smoke signals sent to the North.</p>
                 <p>Please allow 4 to 6 weeks for a response.</p>
@@ -1001,7 +1037,7 @@
             <span></span>
             <span></span>
             <ul id="menu">
-                <a href="dashboard">
+                <a href="#" onclick="return myFunctionDashboard();">
                     <li>Dashboard</li>
                 </a>
                 <a href="#" onclick="return myFunctionLogin();">

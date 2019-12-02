@@ -14,6 +14,14 @@ function myFunctionCloseContact() {
     document.getElementById("panel3").style.display = "none";
 }
 
+function myFunctionDashboard() {
+    document.getElementById("dashboardModel").style.display = "block";
+}
+
+function myFunctionDashboardClose() {
+    document.getElementById("dashboardModel").style.display = "none";
+}
+
 function myFunctionStart() {
     document.getElementById("start").style.display = "block";
 }

@@ -643,6 +643,12 @@ span.psw {
     margin-bottom: 10px;
 }
 
+.welcomeStyling4 {
+    color: #790707;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .loginPlaceHolder {
     float: right;
     position: inherit;
