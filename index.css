@@ -515,10 +515,13 @@ input[type=text], input[type=password] {
 
 /* Center the image and position the close button */
 .imgcontainer {
-  text-align: center;
-  margin: 12px 0 6px 0;
-  position: relative;
-  font-family: 'Special Elite', cursive;
+    text-align: center;
+    margin: 12px 0 -12px 0;
+    position: relative;
+    font-family: 'Special Elite', cursive;
+    color: #942f2f;
+    text-shadow: 2px 2px 2px #636363;
+    font-size: 24px;
 }
 
 img.avatar {
