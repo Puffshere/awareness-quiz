@@ -12,371 +12,394 @@
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Permanent+Marker&display=swap" rel="stylesheet">
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-<div class='panelStylings'>
-    <style>
-        #panel,
-        .flip {
-            font-size: 16px;
-            padding: 15px;
-            text-align: center;
-            background-image: linear-gradient(#e9ebebed, #5f5f5f);
-            color: rgb(118, 172, 172);
-            border: solid 1px #1b1b1b;
-            margin: auto;
-            text-shadow: .5px .5px 1px black;
-            font-family: 'Special Elite', cursive;
-            box-shadow: 5px 5px 5px #2b0707;
-            position: absolute;
-            margin-top: -15px;
-            z-index: 2;
-        }
+    <div class='panelStylings'>
+        <style>
+            #panel,
+            .flip {
+                font-size: 16px;
+                padding: 15px;
+                text-align: center;
+                background-image: linear-gradient(#e9ebebed, #5f5f5f);
+                color: rgb(118, 172, 172);
+                border: solid 1px #1b1b1b;
+                margin: auto;
+                text-shadow: .5px .5px 1px black;
+                font-family: 'Special Elite', cursive;
+                box-shadow: 5px 5px 5px #2b0707;
+                position: absolute;
+                margin-top: -15px;
+                z-index: 2;
+            }
 
-        #panel {
-            display: none;
-        }
-    </style>
+            #panel {
+                display: none;
+            }
+        </style>
 
-    <style>
-        #panel2,
-        .flip3 {
-    font-size: 16px;
-    padding: 15px;
-    text-align: center;
-    background-image: linear-gradient(#2c5a5aed, #d6d3d3);
-    color: rgb(157, 232, 232);
-    border: solid 1px #1b1b1b;
-    margin: auto;
-    text-shadow: 0.5px 0.5px 1px black;
-    font-family: 'Special Elite', cursive;
-    box-shadow: 5px 5px 5px #2b0707;
-    position: absolute;
-    margin-top: -15px;
-    z-index: 2;
-}
+        <style>
+            #panel2,
+            .flip3 {
+                font-size: 16px;
+                padding: 15px;
+                text-align: center;
+                background-image: linear-gradient(#2c5a5aed, #d6d3d3);
+                color: rgb(157, 232, 232);
+                border: solid 1px #1b1b1b;
+                margin: auto;
+                text-shadow: 0.5px 0.5px 1px black;
+                font-family: 'Special Elite', cursive;
+                box-shadow: 5px 5px 5px #2b0707;
+                position: absolute;
+                margin-top: -15px;
+                z-index: 2;
+            }
 
-        #panel2 {
-            display: none;
-        }
-    </style>
+            #panel2 {
+                display: none;
+            }
+        </style>
 
-    <style>
-        #panel1 {
-            font-size: 25px;
-            padding: 15px;
-            text-align: center;
-            background-image: linear-gradient(#e9ebeb, #5f5f5f);
-            color: rgb(118, 172, 172);
-            border: solid 1px #1b1b1b;
-            margin: auto;
-            text-shadow: .5px .5px 1px black;
-            font-family: 'Special Elite', cursive;
-            box-shadow: 5px 5px 5px #2b0707;
-            position: absolute;
-            margin-top: -30px;
-            z-index: 2;
-        }
+        <style>
+            #panel3,
+            .flip4 {
+                font-size: 16px;
+                padding: 15px;
+                text-align: center;
+                background-image: linear-gradient(#5a2c2ced, #d6d3d3);
+                color: rgb(157, 232, 232);
+                border: solid 1px #1b1b1b;
+                margin: auto;
+                text-shadow: 0.5px 0.5px 1px black;
+                font-family: 'Special Elite', cursive;
+                box-shadow: 5px 5px 5px #2b0707;
+                position: absolute;
+                margin-top: -15px;
+                z-index: 2;
+            }
 
-        #panel1 {
-            display: none;
-        }
-    </style>
+            #panel3 {
+                display: none;
+            }
+        </style>
 
-    <style>
-        #start,
-        .flip1 {
-            font-size: 16px;
-            padding: 15px;
-            text-align: center;
-            background-image: linear-gradient(#e9ebeb, #5f5f5f);
-            color: rgb(118, 172, 172);
-            border: solid 1px #1b1b1b;
-            text-shadow: 0.5px 0.5px 1px black;
-            font-family: 'Special Elite', cursive;
-            box-shadow: 5px 5px 5px #2b0707;
-            position: absolute;
-            margin-top: 0px;
-            z-index: 1;
-            min-height: 237px;
-            margin-left: 168px;
-            min-width: 230px;
-            z-index: 1;
-            max-height: 237px;
-        }
+        <style>
+            #panel1 {
+                font-size: 25px;
+                padding: 15px;
+                text-align: center;
+                background-image: linear-gradient(#e9ebeb, #5f5f5f);
+                color: rgb(118, 172, 172);
+                border: solid 1px #1b1b1b;
+                margin: auto;
+                text-shadow: .5px .5px 1px black;
+                font-family: 'Special Elite', cursive;
+                box-shadow: 5px 5px 5px #2b0707;
+                position: absolute;
+                margin-top: -30px;
+                z-index: 2;
+            }
 
-        #start {
-            display: none;
-        }
-    </style>
+            #panel1 {
+                display: none;
+            }
+        </style>
 
-    <style>
-        #question1,
-        .flip1 {
-            font-size: 16px;
-            padding: 15px;
-            text-align: center;
-            background-image: linear-gradient(#e9ebeb, #5f5f5f);
-            color: rgb(118, 172, 172);
-            border: solid 1px #1b1b1b;
-            text-shadow: 0.5px 0.5px 1px black;
-            font-family: 'Special Elite', cursive;
-            box-shadow: 5px 5px 5px #2b0707;
-            position: absolute;
-            margin-top: 0px;
-            z-index: 1;
-            min-height: 237px;
-            margin-left: 168px;
-            min-width: 234.5px;
-            z-index: 1;
-            max-height: 237px;
-        }
+        <style>
+            #start,
+            .flip1 {
+                font-size: 16px;
+                padding: 15px;
+                text-align: center;
+                background-image: linear-gradient(#e9ebeb, #5f5f5f);
+                color: rgb(118, 172, 172);
+                border: solid 1px #1b1b1b;
+                text-shadow: 0.5px 0.5px 1px black;
+                font-family: 'Special Elite', cursive;
+                box-shadow: 5px 5px 5px #2b0707;
+                position: absolute;
+                margin-top: 0px;
+                z-index: 1;
+                min-height: 237px;
+                margin-left: 168px;
+                min-width: 230px;
+                z-index: 1;
+                max-height: 237px;
+            }
 
-        #question1 {
-            display: none;
-        }
-    </style>
+            #start {
+                display: none;
+            }
+        </style>
 
-    <style>
-        #question2,
-        .flip1 {
-            font-size: 16px;
-            padding: 15px;
-            text-align: center;
-            background-image: linear-gradient(#e9ebeb, #5f5f5f);
-            color: rgb(118, 172, 172);
-            border: solid 1px #1b1b1b;
-            text-shadow: 0.5px 0.5px 1px black;
-            font-family: 'Special Elite', cursive;
-            box-shadow: 5px 5px 5px #2b0707;
-            position: absolute;
-            margin-top: 0px;
-            z-index: 1;
-            min-height: 237px;
-            margin-left: 168px;
-            min-width: 234.5px;
-            z-index: 1;
-            max-height: 237px;
-        }
+        <style>
+            #question1,
+            .flip1 {
+                font-size: 16px;
+                padding: 15px;
+                text-align: center;
+                background-image: linear-gradient(#e9ebeb, #5f5f5f);
+                color: rgb(118, 172, 172);
+                border: solid 1px #1b1b1b;
+                text-shadow: 0.5px 0.5px 1px black;
+                font-family: 'Special Elite', cursive;
+                box-shadow: 5px 5px 5px #2b0707;
+                position: absolute;
+                margin-top: 0px;
+                z-index: 1;
+                min-height: 237px;
+                margin-left: 168px;
+                min-width: 234.5px;
+                z-index: 1;
+                max-height: 237px;
+            }
 
-        #question2 {
-            display: none;
-        }
-    </style>
+            #question1 {
+                display: none;
+            }
+        </style>
 
-    <style>
-        #question3,
-        .flip1 {
-            font-size: 16px;
-            padding: 15px;
-            text-align: center;
-            background-image: linear-gradient(#e9ebeb, #5f5f5f);
-            color: rgb(118, 172, 172);
-            border: solid 1px #1b1b1b;
-            text-shadow: 0.5px 0.5px 1px black;
-            font-family: 'Special Elite', cursive;
-            box-shadow: 5px 5px 5px #2b0707;
-            position: absolute;
-            margin-top: 0px;
-            z-index: 1;
-            min-height: 237px;
-            margin-left: 168px;
-            min-width: 234.5px;
-            z-index: 1;
-            max-height: 237px;
-        }
+        <style>
+            #question2,
+            .flip1 {
+                font-size: 16px;
+                padding: 15px;
+                text-align: center;
+                background-image: linear-gradient(#e9ebeb, #5f5f5f);
+                color: rgb(118, 172, 172);
+                border: solid 1px #1b1b1b;
+                text-shadow: 0.5px 0.5px 1px black;
+                font-family: 'Special Elite', cursive;
+                box-shadow: 5px 5px 5px #2b0707;
+                position: absolute;
+                margin-top: 0px;
+                z-index: 1;
+                min-height: 237px;
+                margin-left: 168px;
+                min-width: 234.5px;
+                z-index: 1;
+                max-height: 237px;
+            }
 
-        #question3 {
-            display: none;
-        }
-    </style>
+            #question2 {
+                display: none;
+            }
+        </style>
 
-    <style>
-        #question4,
-        .flip1 {
-            font-size: 16px;
-            padding: 15px;
-            text-align: center;
-            background-image: linear-gradient(#e9ebeb, #5f5f5f);
-            color: rgb(118, 172, 172);
-            border: solid 1px #1b1b1b;
-            text-shadow: 0.5px 0.5px 1px black;
-            font-family: 'Special Elite', cursive;
-            box-shadow: 5px 5px 5px #2b0707;
-            position: absolute;
-            margin-top: 0px;
-            z-index: 1;
-            min-height: 237px;
-            margin-left: 168px;
-            min-width: 234.5px;
-            z-index: 1;
-            max-height: 237px;
-        }
+        <style>
+            #question3,
+            .flip1 {
+                font-size: 16px;
+                padding: 15px;
+                text-align: center;
+                background-image: linear-gradient(#e9ebeb, #5f5f5f);
+                color: rgb(118, 172, 172);
+                border: solid 1px #1b1b1b;
+                text-shadow: 0.5px 0.5px 1px black;
+                font-family: 'Special Elite', cursive;
+                box-shadow: 5px 5px 5px #2b0707;
+                position: absolute;
+                margin-top: 0px;
+                z-index: 1;
+                min-height: 237px;
+                margin-left: 168px;
+                min-width: 234.5px;
+                z-index: 1;
+                max-height: 237px;
+            }
 
-        #question4 {
-            display: none;
-        }
-    </style>
+            #question3 {
+                display: none;
+            }
+        </style>
 
-    <style>
-        #question5,
-        .flip1 {
-            font-size: 16px;
-            padding: 15px;
-            text-align: center;
-            background-image: linear-gradient(#e9ebeb, #5f5f5f);
-            color: rgb(118, 172, 172);
-            border: solid 1px #1b1b1b;
-            text-shadow: 0.5px 0.5px 1px black;
-            font-family: 'Special Elite', cursive;
-            box-shadow: 5px 5px 5px #2b0707;
-            position: absolute;
-            margin-top: 0px;
-            z-index: 1;
-            min-height: 237px;
-            margin-left: 168px;
-            min-width: 234.5px;
-            z-index: 1;
-            max-height: 237px;
-        }
+        <style>
+            #question4,
+            .flip1 {
+                font-size: 16px;
+                padding: 15px;
+                text-align: center;
+                background-image: linear-gradient(#e9ebeb, #5f5f5f);
+                color: rgb(118, 172, 172);
+                border: solid 1px #1b1b1b;
+                text-shadow: 0.5px 0.5px 1px black;
+                font-family: 'Special Elite', cursive;
+                box-shadow: 5px 5px 5px #2b0707;
+                position: absolute;
+                margin-top: 0px;
+                z-index: 1;
+                min-height: 237px;
+                margin-left: 168px;
+                min-width: 234.5px;
+                z-index: 1;
+                max-height: 237px;
+            }
 
-        #question5 {
-            display: none;
-        }
-    </style>
+            #question4 {
+                display: none;
+            }
+        </style>
 
-    <style>
-        #question6,
-        .flip1 {
-            font-size: 16px;
-            padding: 15px;
-            text-align: center;
-            background-image: linear-gradient(#e9ebeb, #5f5f5f);
-            color: rgb(118, 172, 172);
-            border: solid 1px #1b1b1b;
-            text-shadow: 0.5px 0.5px 1px black;
-            font-family: 'Special Elite', cursive;
-            box-shadow: 5px 5px 5px #2b0707;
-            position: absolute;
-            margin-top: 0px;
-            z-index: 1;
-            min-height: 237px;
-            margin-left: 168px;
-            min-width: 234.5px;
-            z-index: 1;
-            max-height: 237px;
-        }
+        <style>
+            #question5,
+            .flip1 {
+                font-size: 16px;
+                padding: 15px;
+                text-align: center;
+                background-image: linear-gradient(#e9ebeb, #5f5f5f);
+                color: rgb(118, 172, 172);
+                border: solid 1px #1b1b1b;
+                text-shadow: 0.5px 0.5px 1px black;
+                font-family: 'Special Elite', cursive;
+                box-shadow: 5px 5px 5px #2b0707;
+                position: absolute;
+                margin-top: 0px;
+                z-index: 1;
+                min-height: 237px;
+                margin-left: 168px;
+                min-width: 234.5px;
+                z-index: 1;
+                max-height: 237px;
+            }
 
-        #question6 {
-            display: none;
-        }
-    </style>
+            #question5 {
+                display: none;
+            }
+        </style>
 
-    <style>
-        #question7,
-        .flip1 {
-            font-size: 16px;
-            padding: 15px;
-            text-align: center;
-            background-image: linear-gradient(#e9ebeb, #5f5f5f);
-            color: rgb(118, 172, 172);
-            border: solid 1px #1b1b1b;
-            text-shadow: 0.5px 0.5px 1px black;
-            font-family: 'Special Elite', cursive;
-            box-shadow: 5px 5px 5px #2b0707;
-            position: absolute;
-            margin-top: 0px;
-            z-index: 1;
-            min-height: 237px;
-            margin-left: 168px;
-            min-width: 234.5px;
-            z-index: 1;
-            max-height: 237px;
-        }
+        <style>
+            #question6,
+            .flip1 {
+                font-size: 16px;
+                padding: 15px;
+                text-align: center;
+                background-image: linear-gradient(#e9ebeb, #5f5f5f);
+                color: rgb(118, 172, 172);
+                border: solid 1px #1b1b1b;
+                text-shadow: 0.5px 0.5px 1px black;
+                font-family: 'Special Elite', cursive;
+                box-shadow: 5px 5px 5px #2b0707;
+                position: absolute;
+                margin-top: 0px;
+                z-index: 1;
+                min-height: 237px;
+                margin-left: 168px;
+                min-width: 234.5px;
+                z-index: 1;
+                max-height: 237px;
+            }
 
-        #question7 {
-            display: none;
-        }
-    </style>
+            #question6 {
+                display: none;
+            }
+        </style>
 
-    <style>
-        #question8,
-        .flip1 {
-            font-size: 16px;
-            padding: 15px;
-            text-align: center;
-            background-image: linear-gradient(#e9ebeb, #5f5f5f);
-            color: rgb(118, 172, 172);
-            border: solid 1px #1b1b1b;
-            text-shadow: 0.5px 0.5px 1px black;
-            font-family: 'Special Elite', cursive;
-            box-shadow: 5px 5px 5px #2b0707;
-            position: absolute;
-            margin-top: 0px;
-            z-index: 1;
-            min-height: 237px;
-            margin-left: 168px;
-            min-width: 234.5px;
-            z-index: 1;
-            max-height: 237px;
-        }
+        <style>
+            #question7,
+            .flip1 {
+                font-size: 16px;
+                padding: 15px;
+                text-align: center;
+                background-image: linear-gradient(#e9ebeb, #5f5f5f);
+                color: rgb(118, 172, 172);
+                border: solid 1px #1b1b1b;
+                text-shadow: 0.5px 0.5px 1px black;
+                font-family: 'Special Elite', cursive;
+                box-shadow: 5px 5px 5px #2b0707;
+                position: absolute;
+                margin-top: 0px;
+                z-index: 1;
+                min-height: 237px;
+                margin-left: 168px;
+                min-width: 234.5px;
+                z-index: 1;
+                max-height: 237px;
+            }
 
-        #question8 {
-            display: none;
-        }
-    </style>
+            #question7 {
+                display: none;
+            }
+        </style>
 
-    <style>
-        #question9,
-        .flip1 {
-            font-size: 16px;
-            padding: 15px;
-            text-align: center;
-            background-image: linear-gradient(#e9ebeb, #5f5f5f);
-            color: rgb(118, 172, 172);
-            border: solid 1px #1b1b1b;
-            text-shadow: 0.5px 0.5px 1px black;
-            font-family: 'Special Elite', cursive;
-            box-shadow: 5px 5px 5px #2b0707;
-            position: absolute;
-            margin-top: 0px;
-            z-index: 1;
-            min-height: 237px;
-            margin-left: 168px;
-            min-width: 234.5px;
-            z-index: 1;
-            max-height: 237px;
-        }
+        <style>
+            #question8,
+            .flip1 {
+                font-size: 16px;
+                padding: 15px;
+                text-align: center;
+                background-image: linear-gradient(#e9ebeb, #5f5f5f);
+                color: rgb(118, 172, 172);
+                border: solid 1px #1b1b1b;
+                text-shadow: 0.5px 0.5px 1px black;
+                font-family: 'Special Elite', cursive;
+                box-shadow: 5px 5px 5px #2b0707;
+                position: absolute;
+                margin-top: 0px;
+                z-index: 1;
+                min-height: 237px;
+                margin-left: 168px;
+                min-width: 234.5px;
+                z-index: 1;
+                max-height: 237px;
+            }
 
-        #question9 {
-            display: none;
-        }
-    </style>
+            #question8 {
+                display: none;
+            }
+        </style>
 
-    <style>
-        #question10,
-        .flip1 {
-            font-size: 16px;
-            padding: 15px;
-            text-align: center;
-            background-image: linear-gradient(#e9ebeb, #5f5f5f);
-            color: rgb(118, 172, 172);
-            border: solid 1px #1b1b1b;
-            text-shadow: 0.5px 0.5px 1px black;
-            font-family: 'Special Elite', cursive;
-            box-shadow: 5px 5px 5px #2b0707;
-            position: absolute;
-            margin-top: 0px;
-            z-index: 1;
-            min-height: 237px;
-            margin-left: 168px;
-            min-width: 234.5px;
-            z-index: 1;
-            max-height: 237px;
-        }
+        <style>
+            #question9,
+            .flip1 {
+                font-size: 16px;
+                padding: 15px;
+                text-align: center;
+                background-image: linear-gradient(#e9ebeb, #5f5f5f);
+                color: rgb(118, 172, 172);
+                border: solid 1px #1b1b1b;
+                text-shadow: 0.5px 0.5px 1px black;
+                font-family: 'Special Elite', cursive;
+                box-shadow: 5px 5px 5px #2b0707;
+                position: absolute;
+                margin-top: 0px;
+                z-index: 1;
+                min-height: 237px;
+                margin-left: 168px;
+                min-width: 234.5px;
+                z-index: 1;
+                max-height: 237px;
+            }
 
-        #question10 {
-            display: none;
-        }
-    </style>
+            #question9 {
+                display: none;
+            }
+        </style>
+
+        <style>
+            #question10,
+            .flip1 {
+                font-size: 16px;
+                padding: 15px;
+                text-align: center;
+                background-image: linear-gradient(#e9ebeb, #5f5f5f);
+                color: rgb(118, 172, 172);
+                border: solid 1px #1b1b1b;
+                text-shadow: 0.5px 0.5px 1px black;
+                font-family: 'Special Elite', cursive;
+                box-shadow: 5px 5px 5px #2b0707;
+                position: absolute;
+                margin-top: 0px;
+                z-index: 1;
+                min-height: 237px;
+                margin-left: 168px;
+                min-width: 234.5px;
+                z-index: 1;
+                max-height: 237px;
+            }
+
+            #question10 {
+                display: none;
+            }
+        </style>
     </div>
 
     <style>
@@ -409,47 +432,68 @@
 </head>
 
 
-
 <body>
 
+    <div class="hamburgerDiv">
+        <div class="container" onclick="myFunction2(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
 
-    <div class="container" onclick="myFunction2(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
+        <script>
+            function myFunction2(x) {
+                x.classList.toggle("change");
+            }
+
+        </script>
     </div>
 
-    <script>
-        function myFunction2(x) {
-            x.classList.toggle("change");
-        }
-
-    </script>
+    <p class="loginPlaceHolder" id="nameChange">Login</p>
 
     <p class="flip" onclick="myFunction()">HERE!</p>
 
     <div id="panel">
         <div class="animate">
-        <h2 class="welcomeStyling">Welcome the the Self-Awareness Test!</h2>
-        <p>If you are brave enough to take this test you may find out how people really percieve you.</p>
-        <p>While it can be shocking to find out how other people really percieve you, don't be afraid.</p>
-        <p>Take the test and become a better person.</p>
-        <br>
-        <button class="continueStyling" onclick="myFunctionStart(), myFunctionClose()">Start</button>
+            <h2 class="welcomeStyling">Welcome the the Self-Awareness Test!</h2>
+            <p>If you are brave enough to take this test you may find out how people really percieve you.</p>
+            <p>While it can be shocking to find out how other people really percieve you, don't be afraid.</p>
+            <p>Take the test and become a better person.</p>
+            <br>
+            <button class="continueStyling" onclick="myFunctionStart(), myFunctionClose()">Start</button>
+        </div>
     </div>
-</div>
 
     <div id="panel2">
         <div class="animate">
             <h2 class="welcomeStyling2">Welcome to the about page!</h2>
             <div class="aboutStyling">
-                <p>This quiz is designed to test your self-awareness by compairing your answers with a group of answers given by the people you choose to take part in your quiz.</p>
-                <p>After completing your quiz pass it on to friends and every five participants will return you a little more self understanding.</p>
-                <p>All answers given will be anonymous and your results will be provided on a dashboard only you will be able to acess when logged in.</p>
-                <p>Good luck and have fun learn something!</p>
+                <p>This quiz is designed to test your self-awareness by compairing your answers with a group of answers
+                    given by the people you choose to take part in your quiz.</p>
+                <p>After completing your quiz pass it on to friends and every five participants will return you a little
+                    more self understanding.</p>
+                <p>All answers given will be anonymous and your results will be provided on a dashboard only you will be
+                    able to acess when logged in.</p>
+                <p>Good luck, have fun, and learn something!</p>
             </div>
             <br>
             <button class="aboutStylingBtn" onclick="myFunctionCloseAbout()">Back</button>
+        </div>
+    </div>
+
+    <div id="panel3">
+        <div class="animate">
+            <h2 class="welcomeStyling3">Welcome to the Contact page!</h2>
+            <div class="aboutStyling">
+                <p>If you would like to contact the caretaker of this quiz to report any "malfuntions", you can do so by 
+                    emailing Jim "The Web Man", at shawncurtistaylor@hotmail.com.</p>
+                <p>Jim also will respond to telegrams, faxs, and smoke signals sent to the North.</p>
+                <p>Please allow 4 to 6 weeks for a response.</p>
+                <p>On a side note Epstein did not kill himself!</p>
+                <p>Good luck, have fun, and learn something!</p>
+            </div>
+            <br>
+            <button class="aboutStylingBtn" onclick="myFunctionCloseContact()">Back</button>
         </div>
     </div>
 
@@ -464,434 +508,452 @@
 
     <div class="questions">
 
-    <!--------------------------------------------------------- question1 ---------------------------------------------------------->
+        <!--------------------------------------------------------- question1 ---------------------------------------------------------->
 
-    <div id="question1">
-        <h2 class="welcomeStyling1">Rate your</h2>
-        <h2 class="welcomeStyling1">intelligence.</h2>
-        <br>
-        <div class="container">
-            <div class="row">
-                <div class="rating">
-                    <input type="radio" id="star10" name="rating" value="10" /><label for="star10" title="Rocks!">5
-                        stars</label>
-                    <input type="radio" id="star9" name="rating" value="9" /><label for="star9" title="Rocks!">4
-                        stars</label>
-                    <input type="radio" id="star8" name="rating" value="8" /><label for="star8" title="Pretty good">3
-                        stars</label>
-                    <input type="radio" id="star7" name="rating" value="7" /><label for="star7" title="Pretty good">2
-                        stars</label>
-                    <input type="radio" id="star6" name="rating" value="6" /><label for="star6" title="Meh">1
-                        star</label>
-                    <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Meh">5
-                        stars</label>
-                    <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Kinda bad">4
-                        stars</label>
-                    <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Kinda bad">3
-                        stars</label>
-                    <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Sucks big tim">2
-                        stars</label>
-                    <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1
-                        star</label>
+        <div id="question1">
+            <h2 class="welcomeStyling1">Rate your</h2>
+            <h2 class="welcomeStyling1">intelligence.</h2>
+            <br>
+            <div class="container">
+                <div class="row">
+                    <div class="rating">
+                        <input type="radio" id="star10" name="rating" value="10" /><label for="star10" title="Rocks!">5
+                            stars</label>
+                        <input type="radio" id="star9" name="rating" value="9" /><label for="star9" title="Rocks!">4
+                            stars</label>
+                        <input type="radio" id="star8" name="rating" value="8" /><label for="star8"
+                            title="Pretty good">3
+                            stars</label>
+                        <input type="radio" id="star7" name="rating" value="7" /><label for="star7"
+                            title="Pretty good">2
+                            stars</label>
+                        <input type="radio" id="star6" name="rating" value="6" /><label for="star6" title="Meh">1
+                            star</label>
+                        <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Meh">5
+                            stars</label>
+                        <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Kinda bad">4
+                            stars</label>
+                        <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Kinda bad">3
+                            stars</label>
+                        <input type="radio" id="star2" name="rating" value="2" /><label for="star2"
+                            title="Sucks big tim">2
+                            stars</label>
+                        <input type="radio" id="star1" name="rating" value="1" /><label for="star1"
+                            title="Sucks big time">1
+                            star</label>
+                    </div>
                 </div>
             </div>
+            <br>
+            <button class="continueStyling2" onclick="myFunctionQ2()">Next</button>
         </div>
-        <br>
-        <button class="continueStyling2" onclick="myFunctionQ2()">Next</button>
-    </div>
 
-    <!--------------------------------------------------------- question2 ---------------------------------------------------------->
+        <!--------------------------------------------------------- question2 ---------------------------------------------------------->
 
-    <div id="question2">
-        <h2 class="welcomeStyling1">Rate your</h2>
-        <h2 class="welcomeStyling1">dependability.</h2>
-        <br>
-        <div class="container">
-            <div class="row">
-                <div class="rating">
-                    <input type="radio" id="star010" name="rating" value="10" /><label for="star010" title="Rocks!">5
-                        stars</label>
-                    <input type="radio" id="star09" name="rating" value="9" /><label for="star09" title="Rocks!">4
-                        stars</label>
-                    <input type="radio" id="star08" name="rating" value="8" /><label for="star08" title="Pretty good">3
-                        stars</label>
-                    <input type="radio" id="star07" name="rating" value="7" /><label for="star07" title="Pretty good">2
-                        stars</label>
-                    <input type="radio" id="star06" name="rating" value="6" /><label for="star06" title="Meh">1
-                        star</label>
-                    <input type="radio" id="star05" name="rating" value="5" /><label for="star05" title="Meh">5
-                        stars</label>
-                    <input type="radio" id="star04" name="rating" value="4" /><label for="star04" title="Kinda bad">4
-                        stars</label>
-                    <input type="radio" id="star03" name="rating" value="3" /><label for="star03" title="Kinda bad">3
-                        stars</label>
-                    <input type="radio" id="star02" name="rating" value="2" /><label for="star02"
-                        title="Sucks big tim">2
-                        stars</label>
-                    <input type="radio" id="star01" name="rating" value="1" /><label for="star01"
-                        title="Sucks big time">1
-                        star</label>
+        <div id="question2">
+            <h2 class="welcomeStyling1">Rate your</h2>
+            <h2 class="welcomeStyling1">dependability.</h2>
+            <br>
+            <div class="container">
+                <div class="row">
+                    <div class="rating">
+                        <input type="radio" id="star010" name="rating" value="10" /><label for="star010"
+                            title="Rocks!">5
+                            stars</label>
+                        <input type="radio" id="star09" name="rating" value="9" /><label for="star09" title="Rocks!">4
+                            stars</label>
+                        <input type="radio" id="star08" name="rating" value="8" /><label for="star08"
+                            title="Pretty good">3
+                            stars</label>
+                        <input type="radio" id="star07" name="rating" value="7" /><label for="star07"
+                            title="Pretty good">2
+                            stars</label>
+                        <input type="radio" id="star06" name="rating" value="6" /><label for="star06" title="Meh">1
+                            star</label>
+                        <input type="radio" id="star05" name="rating" value="5" /><label for="star05" title="Meh">5
+                            stars</label>
+                        <input type="radio" id="star04" name="rating" value="4" /><label for="star04"
+                            title="Kinda bad">4
+                            stars</label>
+                        <input type="radio" id="star03" name="rating" value="3" /><label for="star03"
+                            title="Kinda bad">3
+                            stars</label>
+                        <input type="radio" id="star02" name="rating" value="2" /><label for="star02"
+                            title="Sucks big tim">2
+                            stars</label>
+                        <input type="radio" id="star01" name="rating" value="1" /><label for="star01"
+                            title="Sucks big time">1
+                            star</label>
+                    </div>
                 </div>
             </div>
+            <br>
+            <button class="continueStyling2" onclick="myFunctionQ3()">Next</button>
         </div>
-        <br>
-        <button class="continueStyling2" onclick="myFunctionQ3()">Next</button>
-    </div>
 
-    <!--------------------------------------------------------- question3 ---------------------------------------------------------->
+        <!--------------------------------------------------------- question3 ---------------------------------------------------------->
 
-    <div id="question3">
-        <h2 class="welcomeStyling1">Rate your</h2>
-        <h2 class="welcomeStyling1">looks.</h2>
-        <br>
-        <div class="container">
-            <div class="row">
-                <div class="rating">
-                    <input type="radio" id="star0010" name="rating" value="10" /><label for="star0010" title="Rocks!">5
-                        stars</label>
-                    <input type="radio" id="star009" name="rating" value="9" /><label for="star009" title="Rocks!">4
-                        stars</label>
-                    <input type="radio" id="star008" name="rating" value="8" /><label for="star008"
-                        title="Pretty good">3
-                        stars</label>
-                    <input type="radio" id="star007" name="rating" value="7" /><label for="star007"
-                        title="Pretty good">2
-                        stars</label>
-                    <input type="radio" id="star006" name="rating" value="6" /><label for="star006" title="Meh">1
-                        star</label>
-                    <input type="radio" id="star005" name="rating" value="5" /><label for="star005" title="Meh">5
-                        stars</label>
-                    <input type="radio" id="star004" name="rating" value="4" /><label for="star004" title="Kinda bad">4
-                        stars</label>
-                    <input type="radio" id="star003" name="rating" value="3" /><label for="star003" title="Kinda bad">3
-                        stars</label>
-                    <input type="radio" id="star002" name="rating" value="2" /><label for="star002"
-                        title="Sucks big tim">2
-                        stars</label>
-                    <input type="radio" id="star001" name="rating" value="1" /><label for="star001"
-                        title="Sucks big time">1
-                        star</label>
+        <div id="question3">
+            <h2 class="welcomeStyling1">Rate your</h2>
+            <h2 class="welcomeStyling1">looks.</h2>
+            <br>
+            <div class="container">
+                <div class="row">
+                    <div class="rating">
+                        <input type="radio" id="star0010" name="rating" value="10" /><label for="star0010"
+                            title="Rocks!">5
+                            stars</label>
+                        <input type="radio" id="star009" name="rating" value="9" /><label for="star009" title="Rocks!">4
+                            stars</label>
+                        <input type="radio" id="star008" name="rating" value="8" /><label for="star008"
+                            title="Pretty good">3
+                            stars</label>
+                        <input type="radio" id="star007" name="rating" value="7" /><label for="star007"
+                            title="Pretty good">2
+                            stars</label>
+                        <input type="radio" id="star006" name="rating" value="6" /><label for="star006" title="Meh">1
+                            star</label>
+                        <input type="radio" id="star005" name="rating" value="5" /><label for="star005" title="Meh">5
+                            stars</label>
+                        <input type="radio" id="star004" name="rating" value="4" /><label for="star004"
+                            title="Kinda bad">4
+                            stars</label>
+                        <input type="radio" id="star003" name="rating" value="3" /><label for="star003"
+                            title="Kinda bad">3
+                            stars</label>
+                        <input type="radio" id="star002" name="rating" value="2" /><label for="star002"
+                            title="Sucks big tim">2
+                            stars</label>
+                        <input type="radio" id="star001" name="rating" value="1" /><label for="star001"
+                            title="Sucks big time">1
+                            star</label>
+                    </div>
                 </div>
             </div>
+            <br>
+            <button class="continueStyling2" onclick="myFunctionQ4()">Next</button>
         </div>
-        <br>
-        <button class="continueStyling2" onclick="myFunctionQ4()">Next</button>
-    </div>
 
-    <!--------------------------------------------------------- question4 ---------------------------------------------------------->
+        <!--------------------------------------------------------- question4 ---------------------------------------------------------->
 
-    <div id="question4">
-        <h2 class="welcomeStyling1">Rate your</h2>
-        <h2 class="welcomeStyling1">fasion sense.</h2>
-        <br>
-        <div class="container">
-            <div class="row">
-                <div class="rating">
-                    <input type="radio" id="star00010" name="rating" value="10" /><label for="star00010"
-                        title="Rocks!">5
-                        stars</label>
-                    <input type="radio" id="star0009" name="rating" value="9" /><label for="star0009" title="Rocks!">4
-                        stars</label>
-                    <input type="radio" id="star0008" name="rating" value="8" /><label for="star0008"
-                        title="Pretty good">3
-                        stars</label>
-                    <input type="radio" id="star0007" name="rating" value="7" /><label for="star0007"
-                        title="Pretty good">2
-                        stars</label>
-                    <input type="radio" id="star0006" name="rating" value="6" /><label for="star0006" title="Meh">1
-                        star</label>
-                    <input type="radio" id="star0005" name="rating" value="5" /><label for="star0005" title="Meh">5
-                        stars</label>
-                    <input type="radio" id="star0004" name="rating" value="4" /><label for="star0004"
-                        title="Kinda bad">4
-                        stars</label>
-                    <input type="radio" id="star0003" name="rating" value="3" /><label for="star0003"
-                        title="Kinda bad">3
-                        stars</label>
-                    <input type="radio" id="star0002" name="rating" value="2" /><label for="star0002"
-                        title="Sucks big tim">2
-                        stars</label>
-                    <input type="radio" id="star0001" name="rating" value="1" /><label for="star0001"
-                        title="Sucks big time">1
-                        star</label>
+        <div id="question4">
+            <h2 class="welcomeStyling1">Rate your</h2>
+            <h2 class="welcomeStyling1">fasion sense.</h2>
+            <br>
+            <div class="container">
+                <div class="row">
+                    <div class="rating">
+                        <input type="radio" id="star00010" name="rating" value="10" /><label for="star00010"
+                            title="Rocks!">5
+                            stars</label>
+                        <input type="radio" id="star0009" name="rating" value="9" /><label for="star0009"
+                            title="Rocks!">4
+                            stars</label>
+                        <input type="radio" id="star0008" name="rating" value="8" /><label for="star0008"
+                            title="Pretty good">3
+                            stars</label>
+                        <input type="radio" id="star0007" name="rating" value="7" /><label for="star0007"
+                            title="Pretty good">2
+                            stars</label>
+                        <input type="radio" id="star0006" name="rating" value="6" /><label for="star0006" title="Meh">1
+                            star</label>
+                        <input type="radio" id="star0005" name="rating" value="5" /><label for="star0005" title="Meh">5
+                            stars</label>
+                        <input type="radio" id="star0004" name="rating" value="4" /><label for="star0004"
+                            title="Kinda bad">4
+                            stars</label>
+                        <input type="radio" id="star0003" name="rating" value="3" /><label for="star0003"
+                            title="Kinda bad">3
+                            stars</label>
+                        <input type="radio" id="star0002" name="rating" value="2" /><label for="star0002"
+                            title="Sucks big tim">2
+                            stars</label>
+                        <input type="radio" id="star0001" name="rating" value="1" /><label for="star0001"
+                            title="Sucks big time">1
+                            star</label>
+                    </div>
                 </div>
             </div>
+            <br>
+            <button class="continueStyling2" onclick="myFunctionQ5()">Next</button>
         </div>
-        <br>
-        <button class="continueStyling2" onclick="myFunctionQ5()">Next</button>
-    </div>
 
-    <!--------------------------------------------------------- question5 ---------------------------------------------------------->
+        <!--------------------------------------------------------- question5 ---------------------------------------------------------->
 
-    <div id="question5">
-        <h2 class="welcomeStyling1">Rate your</h2>
-        <h2 class="welcomeStyling1">self-awareness.</h2>
-        <br>
-        <div class="container">
-            <div class="row">
-                <div class="rating">
-                    <input type="radio" id="star000010" name="rating" value="10" /><label for="star000010"
-                        title="Rocks!">5
-                        stars</label>
-                    <input type="radio" id="star00009" name="rating" value="9" /><label for="star00009" title="Rocks!">4
-                        stars</label>
-                    <input type="radio" id="star00008" name="rating" value="8" /><label for="star00008"
-                        title="Pretty good">3
-                        stars</label>
-                    <input type="radio" id="star00007" name="rating" value="7" /><label for="star00007"
-                        title="Pretty good">2
-                        stars</label>
-                    <input type="radio" id="star00006" name="rating" value="6" /><label for="star00006" title="Meh">1
-                        star</label>
-                    <input type="radio" id="star00005" name="rating" value="5" /><label for="star00005" title="Meh">5
-                        stars</label>
-                    <input type="radio" id="star00004" name="rating" value="4" /><label for="star00004"
-                        title="Kinda bad">4
-                        stars</label>
-                    <input type="radio" id="star00003" name="rating" value="3" /><label for="star00003"
-                        title="Kinda bad">3
-                        stars</label>
-                    <input type="radio" id="star00002" name="rating" value="2" /><label for="star00002"
-                        title="Sucks big tim">2
-                        stars</label>
-                    <input type="radio" id="star00001" name="rating" value="1" /><label for="star00001"
-                        title="Sucks big time">1
-                        star</label>
+        <div id="question5">
+            <h2 class="welcomeStyling1">Rate your</h2>
+            <h2 class="welcomeStyling1">self-awareness.</h2>
+            <br>
+            <div class="container">
+                <div class="row">
+                    <div class="rating">
+                        <input type="radio" id="star000010" name="rating" value="10" /><label for="star000010"
+                            title="Rocks!">5
+                            stars</label>
+                        <input type="radio" id="star00009" name="rating" value="9" /><label for="star00009"
+                            title="Rocks!">4
+                            stars</label>
+                        <input type="radio" id="star00008" name="rating" value="8" /><label for="star00008"
+                            title="Pretty good">3
+                            stars</label>
+                        <input type="radio" id="star00007" name="rating" value="7" /><label for="star00007"
+                            title="Pretty good">2
+                            stars</label>
+                        <input type="radio" id="star00006" name="rating" value="6" /><label for="star00006"
+                            title="Meh">1
+                            star</label>
+                        <input type="radio" id="star00005" name="rating" value="5" /><label for="star00005"
+                            title="Meh">5
+                            stars</label>
+                        <input type="radio" id="star00004" name="rating" value="4" /><label for="star00004"
+                            title="Kinda bad">4
+                            stars</label>
+                        <input type="radio" id="star00003" name="rating" value="3" /><label for="star00003"
+                            title="Kinda bad">3
+                            stars</label>
+                        <input type="radio" id="star00002" name="rating" value="2" /><label for="star00002"
+                            title="Sucks big tim">2
+                            stars</label>
+                        <input type="radio" id="star00001" name="rating" value="1" /><label for="star00001"
+                            title="Sucks big time">1
+                            star</label>
+                    </div>
                 </div>
             </div>
+            <br>
+            <button class="continueStyling2" onclick="myFunctionQ6()">Next</button>
         </div>
-        <br>
-        <button class="continueStyling2" onclick="myFunctionQ6()">Next</button>
-    </div>
 
-    <!--------------------------------------------------------- question6 ---------------------------------------------------------->
+        <!--------------------------------------------------------- question6 ---------------------------------------------------------->
 
-    <div id="question6">
-        <h2 class="welcomeStyling1">Rate your</h2>
-        <h2 class="welcomeStyling1">sense of humor</h2>
-        <br>
-        <div class="container">
-            <div class="row">
-                <div class="rating">
-                    <input type="radio" id="star0000010" name="rating" value="10" /><label for="star0000010"
-                        title="Rocks!">5
-                        stars</label>
-                    <input type="radio" id="star000009" name="rating" value="9" /><label for="star000009"
-                        title="Rocks!">4
-                        stars</label>
-                    <input type="radio" id="star000008" name="rating" value="8" /><label for="star000008"
-                        title="Pretty good">3
-                        stars</label>
-                    <input type="radio" id="star000007" name="rating" value="7" /><label for="star000007"
-                        title="Pretty good">2
-                        stars</label>
-                    <input type="radio" id="star000006" name="rating" value="6" /><label for="star000006" title="Meh">1
-                        star</label>
-                    <input type="radio" id="star000005" name="rating" value="5" /><label for="star000005" title="Meh">5
-                        stars</label>
-                    <input type="radio" id="star000004" name="rating" value="4" /><label for="star000004"
-                        title="Kinda bad">4
-                        stars</label>
-                    <input type="radio" id="star000003" name="rating" value="3" /><label for="star000003"
-                        title="Kinda bad">3
-                        stars</label>
-                    <input type="radio" id="star000002" name="rating" value="2" /><label for="star000002"
-                        title="Sucks big tim">2
-                        stars</label>
-                    <input type="radio" id="star000001" name="rating" value="1" /><label for="star000001"
-                        title="Sucks big time">1
-                        star</label>
+        <div id="question6">
+            <h2 class="welcomeStyling1">Rate your</h2>
+            <h2 class="welcomeStyling1">sense of humor</h2>
+            <br>
+            <div class="container">
+                <div class="row">
+                    <div class="rating">
+                        <input type="radio" id="star0000010" name="rating" value="10" /><label for="star0000010"
+                            title="Rocks!">5
+                            stars</label>
+                        <input type="radio" id="star000009" name="rating" value="9" /><label for="star000009"
+                            title="Rocks!">4
+                            stars</label>
+                        <input type="radio" id="star000008" name="rating" value="8" /><label for="star000008"
+                            title="Pretty good">3
+                            stars</label>
+                        <input type="radio" id="star000007" name="rating" value="7" /><label for="star000007"
+                            title="Pretty good">2
+                            stars</label>
+                        <input type="radio" id="star000006" name="rating" value="6" /><label for="star000006"
+                            title="Meh">1
+                            star</label>
+                        <input type="radio" id="star000005" name="rating" value="5" /><label for="star000005"
+                            title="Meh">5
+                            stars</label>
+                        <input type="radio" id="star000004" name="rating" value="4" /><label for="star000004"
+                            title="Kinda bad">4
+                            stars</label>
+                        <input type="radio" id="star000003" name="rating" value="3" /><label for="star000003"
+                            title="Kinda bad">3
+                            stars</label>
+                        <input type="radio" id="star000002" name="rating" value="2" /><label for="star000002"
+                            title="Sucks big tim">2
+                            stars</label>
+                        <input type="radio" id="star000001" name="rating" value="1" /><label for="star000001"
+                            title="Sucks big time">1
+                            star</label>
+                    </div>
                 </div>
             </div>
+            <br>
+            <button class="continueStyling2" onclick="myFunctionQ7()">Next</button>
         </div>
-        <br>
-        <button class="continueStyling2" onclick="myFunctionQ7()">Next</button>
-    </div>
 
-    <!--------------------------------------------------------- question7 ---------------------------------------------------------->
+        <!--------------------------------------------------------- question7 ---------------------------------------------------------->
 
-    <div id="question7">
-        <h2 class="welcomeStyling1">Rate your</h2>
-        <h2 class="welcomeStyling1">street smarts</h2>
-        <br>
-        <div class="container">
-            <div class="row">
-                <div class="rating">
-                    <input type="radio" id="star00000010" name="rating" value="10" /><label for="star00000010"
-                        title="Rocks!">5
-                        stars</label>
-                    <input type="radio" id="star0000009" name="rating" value="9" /><label for="star0000009"
-                        title="Rocks!">4
-                        stars</label>
-                    <input type="radio" id="star0000008" name="rating" value="8" /><label for="star0000008"
-                        title="Pretty good">3
-                        stars</label>
-                    <input type="radio" id="star0000007" name="rating" value="7" /><label for="star0000007"
-                        title="Pretty good">2
-                        stars</label>
-                    <input type="radio" id="star0000006" name="rating" value="6" /><label for="star0000006"
-                        title="Meh">1
-                        star</label>
-                    <input type="radio" id="star0000005" name="rating" value="5" /><label for="star0000005"
-                        title="Meh">5
-                        stars</label>
-                    <input type="radio" id="star0000004" name="rating" value="4" /><label for="star0000004"
-                        title="Kinda bad">4
-                        stars</label>
-                    <input type="radio" id="star0000003" name="rating" value="3" /><label for="star0000003"
-                        title="Kinda bad">3
-                        stars</label>
-                    <input type="radio" id="star0000002" name="rating" value="2" /><label for="star0000002"
-                        title="Sucks big tim">2
-                        stars</label>
-                    <input type="radio" id="star0000001" name="rating" value="1" /><label for="star0000001"
-                        title="Sucks big time">1
-                        star</label>
+        <div id="question7">
+            <h2 class="welcomeStyling1">Rate your</h2>
+            <h2 class="welcomeStyling1">street smarts</h2>
+            <br>
+            <div class="container">
+                <div class="row">
+                    <div class="rating">
+                        <input type="radio" id="star00000010" name="rating" value="10" /><label for="star00000010"
+                            title="Rocks!">5
+                            stars</label>
+                        <input type="radio" id="star0000009" name="rating" value="9" /><label for="star0000009"
+                            title="Rocks!">4
+                            stars</label>
+                        <input type="radio" id="star0000008" name="rating" value="8" /><label for="star0000008"
+                            title="Pretty good">3
+                            stars</label>
+                        <input type="radio" id="star0000007" name="rating" value="7" /><label for="star0000007"
+                            title="Pretty good">2
+                            stars</label>
+                        <input type="radio" id="star0000006" name="rating" value="6" /><label for="star0000006"
+                            title="Meh">1
+                            star</label>
+                        <input type="radio" id="star0000005" name="rating" value="5" /><label for="star0000005"
+                            title="Meh">5
+                            stars</label>
+                        <input type="radio" id="star0000004" name="rating" value="4" /><label for="star0000004"
+                            title="Kinda bad">4
+                            stars</label>
+                        <input type="radio" id="star0000003" name="rating" value="3" /><label for="star0000003"
+                            title="Kinda bad">3
+                            stars</label>
+                        <input type="radio" id="star0000002" name="rating" value="2" /><label for="star0000002"
+                            title="Sucks big tim">2
+                            stars</label>
+                        <input type="radio" id="star0000001" name="rating" value="1" /><label for="star0000001"
+                            title="Sucks big time">1
+                            star</label>
+                    </div>
                 </div>
             </div>
+            <br>
+            <button class="continueStyling2" onclick="myFunctionQ8()">Next</button>
         </div>
-        <br>
-        <button class="continueStyling2" onclick="myFunctionQ8()">Next</button>
-    </div>
 
-    <!--------------------------------------------------------- question8 ---------------------------------------------------------->
+        <!--------------------------------------------------------- question8 ---------------------------------------------------------->
 
-    <div id="question8">
-        <h2 class="welcomeStyling1">Rate your</h2>
-        <h2 class="welcomeStyling1">charisma</h2>
-        <br>
-        <div class="container">
-            <div class="row">
-                <div class="rating">
-                    <input type="radio" id="star000000010" name="rating" value="10" /><label for="star000000010"
-                        title="Rocks!">5
-                        stars</label>
-                    <input type="radio" id="star00000009" name="rating" value="9" /><label for="star00000009"
-                        title="Rocks!">4
-                        stars</label>
-                    <input type="radio" id="star00000008" name="rating" value="8" /><label for="star00000008"
-                        title="Pretty good">3
-                        stars</label>
-                    <input type="radio" id="star00000007" name="rating" value="7" /><label for="star00000007"
-                        title="Pretty good">2
-                        stars</label>
-                    <input type="radio" id="star00000006" name="rating" value="6" /><label for="star00000006"
-                        title="Meh">1
-                        star</label>
-                    <input type="radio" id="star00000005" name="rating" value="5" /><label for="star00000005"
-                        title="Meh">5
-                        stars</label>
-                    <input type="radio" id="star00000004" name="rating" value="4" /><label for="star00000004"
-                        title="Kinda bad">4
-                        stars</label>
-                    <input type="radio" id="star00000003" name="rating" value="3" /><label for="star00000003"
-                        title="Kinda bad">3
-                        stars</label>
-                    <input type="radio" id="star00000002" name="rating" value="2" /><label for="star00000002"
-                        title="Sucks big tim">2
-                        stars</label>
-                    <input type="radio" id="star00000001" name="rating" value="1" /><label for="star00000001"
-                        title="Sucks big time">1
-                        star</label>
+        <div id="question8">
+            <h2 class="welcomeStyling1">Rate your</h2>
+            <h2 class="welcomeStyling1">charisma</h2>
+            <br>
+            <div class="container">
+                <div class="row">
+                    <div class="rating">
+                        <input type="radio" id="star000000010" name="rating" value="10" /><label for="star000000010"
+                            title="Rocks!">5
+                            stars</label>
+                        <input type="radio" id="star00000009" name="rating" value="9" /><label for="star00000009"
+                            title="Rocks!">4
+                            stars</label>
+                        <input type="radio" id="star00000008" name="rating" value="8" /><label for="star00000008"
+                            title="Pretty good">3
+                            stars</label>
+                        <input type="radio" id="star00000007" name="rating" value="7" /><label for="star00000007"
+                            title="Pretty good">2
+                            stars</label>
+                        <input type="radio" id="star00000006" name="rating" value="6" /><label for="star00000006"
+                            title="Meh">1
+                            star</label>
+                        <input type="radio" id="star00000005" name="rating" value="5" /><label for="star00000005"
+                            title="Meh">5
+                            stars</label>
+                        <input type="radio" id="star00000004" name="rating" value="4" /><label for="star00000004"
+                            title="Kinda bad">4
+                            stars</label>
+                        <input type="radio" id="star00000003" name="rating" value="3" /><label for="star00000003"
+                            title="Kinda bad">3
+                            stars</label>
+                        <input type="radio" id="star00000002" name="rating" value="2" /><label for="star00000002"
+                            title="Sucks big tim">2
+                            stars</label>
+                        <input type="radio" id="star00000001" name="rating" value="1" /><label for="star00000001"
+                            title="Sucks big time">1
+                            star</label>
+                    </div>
                 </div>
             </div>
+            <br>
+            <button class="continueStyling2" onclick="myFunctionQ9()">Next</button>
         </div>
-        <br>
-        <button class="continueStyling2" onclick="myFunctionQ9()">Next</button>
-    </div>
 
-    <!--------------------------------------------------------- question9 ---------------------------------------------------------->
+        <!--------------------------------------------------------- question9 ---------------------------------------------------------->
 
-    <div id="question9">
-        <h2 class="welcomeStyling1">Rate your</h2>
-        <h2 class="welcomeStyling1">grit</h2>
-        <br>
-        <div class="container">
-            <div class="row">
-                <div class="rating">
-                    <input type="radio" id="star0000000010" name="rating" value="10" /><label for="star0000000010"
-                        title="Rocks!">5
-                        stars</label>
-                    <input type="radio" id="star000000009" name="rating" value="9" /><label for="star000000009"
-                        title="Rocks!">4
-                        stars</label>
-                    <input type="radio" id="star000000008" name="rating" value="8" /><label for="star000000008"
-                        title="Pretty good">3
-                        stars</label>
-                    <input type="radio" id="star000000007" name="rating" value="7" /><label for="star000000007"
-                        title="Pretty good">2
-                        stars</label>
-                    <input type="radio" id="star000000006" name="rating" value="6" /><label for="star000000006"
-                        title="Meh">1
-                        star</label>
-                    <input type="radio" id="star000000005" name="rating" value="5" /><label for="star000000005"
-                        title="Meh">5
-                        stars</label>
-                    <input type="radio" id="star000000004" name="rating" value="4" /><label for="star000000004"
-                        title="Kinda bad">4
-                        stars</label>
-                    <input type="radio" id="star000000003" name="rating" value="3" /><label for="star000000003"
-                        title="Kinda bad">3
-                        stars</label>
-                    <input type="radio" id="star000000002" name="rating" value="2" /><label for="star000000002"
-                        title="Sucks big tim">2
-                        stars</label>
-                    <input type="radio" id="star000000001" name="rating" value="1" /><label for="star000000001"
-                        title="Sucks big time">1
-                        star</label>
+        <div id="question9">
+            <h2 class="welcomeStyling1">Rate your</h2>
+            <h2 class="welcomeStyling1">grit</h2>
+            <br>
+            <div class="container">
+                <div class="row">
+                    <div class="rating">
+                        <input type="radio" id="star0000000010" name="rating" value="10" /><label for="star0000000010"
+                            title="Rocks!">5
+                            stars</label>
+                        <input type="radio" id="star000000009" name="rating" value="9" /><label for="star000000009"
+                            title="Rocks!">4
+                            stars</label>
+                        <input type="radio" id="star000000008" name="rating" value="8" /><label for="star000000008"
+                            title="Pretty good">3
+                            stars</label>
+                        <input type="radio" id="star000000007" name="rating" value="7" /><label for="star000000007"
+                            title="Pretty good">2
+                            stars</label>
+                        <input type="radio" id="star000000006" name="rating" value="6" /><label for="star000000006"
+                            title="Meh">1
+                            star</label>
+                        <input type="radio" id="star000000005" name="rating" value="5" /><label for="star000000005"
+                            title="Meh">5
+                            stars</label>
+                        <input type="radio" id="star000000004" name="rating" value="4" /><label for="star000000004"
+                            title="Kinda bad">4
+                            stars</label>
+                        <input type="radio" id="star000000003" name="rating" value="3" /><label for="star000000003"
+                            title="Kinda bad">3
+                            stars</label>
+                        <input type="radio" id="star000000002" name="rating" value="2" /><label for="star000000002"
+                            title="Sucks big tim">2
+                            stars</label>
+                        <input type="radio" id="star000000001" name="rating" value="1" /><label for="star000000001"
+                            title="Sucks big time">1
+                            star</label>
+                    </div>
                 </div>
             </div>
+            <br>
+            <button class="continueStyling2" onclick="myFunctionQ10()">Next</button>
         </div>
-        <br>
-        <button class="continueStyling2" onclick="myFunctionQ10()">Next</button>
-    </div>
 
-    <!--------------------------------------------------------- question10 ---------------------------------------------------------->
+        <!--------------------------------------------------------- question10 ---------------------------------------------------------->
 
-    <div id="question10">
-        <h2 class="welcomeStyling1">Rate your</h2>
-        <h2 class="welcomeStyling1">hygiene</h2>
-        <br>
-        <div class="container">
-            <div class="row">
-                <div class="rating">
-                    <input type="radio" id="star00000000010" name="rating" value="10" /><label for="star00000000010"
-                        title="Rocks!">5
-                        stars</label>
-                    <input type="radio" id="star0000000009" name="rating" value="9" /><label for="star0000000009"
-                        title="Rocks!">4
-                        stars</label>
-                    <input type="radio" id="star0000000008" name="rating" value="8" /><label for="star0000000008"
-                        title="Pretty good">3
-                        stars</label>
-                    <input type="radio" id="star0000000007" name="rating" value="7" /><label for="star0000000007"
-                        title="Pretty good">2
-                        stars</label>
-                    <input type="radio" id="star0000000006" name="rating" value="6" /><label for="star0000000006"
-                        title="Meh">1
-                        star</label>
-                    <input type="radio" id="star0000000005" name="rating" value="5" /><label for="star0000000005"
-                        title="Meh">5
-                        stars</label>
-                    <input type="radio" id="star0000000004" name="rating" value="4" /><label for="star0000000004"
-                        title="Kinda bad">4
-                        stars</label>
-                    <input type="radio" id="star0000000003" name="rating" value="3" /><label for="star0000000003"
-                        title="Kinda bad">3
-                        stars</label>
-                    <input type="radio" id="star0000000002" name="rating" value="2" /><label for="star0000000002"
-                        title="Sucks big tim">2
-                        stars</label>
-                    <input type="radio" id="star0000000001" name="rating" value="1" /><label for="star0000000001"
-                        title="Sucks big time">1
-                        star</label>
+        <div id="question10">
+            <h2 class="welcomeStyling1">Rate your</h2>
+            <h2 class="welcomeStyling1">hygiene</h2>
+            <br>
+            <div class="container">
+                <div class="row">
+                    <div class="rating">
+                        <input type="radio" id="star00000000010" name="rating" value="10" /><label for="star00000000010"
+                            title="Rocks!">5
+                            stars</label>
+                        <input type="radio" id="star0000000009" name="rating" value="9" /><label for="star0000000009"
+                            title="Rocks!">4
+                            stars</label>
+                        <input type="radio" id="star0000000008" name="rating" value="8" /><label for="star0000000008"
+                            title="Pretty good">3
+                            stars</label>
+                        <input type="radio" id="star0000000007" name="rating" value="7" /><label for="star0000000007"
+                            title="Pretty good">2
+                            stars</label>
+                        <input type="radio" id="star0000000006" name="rating" value="6" /><label for="star0000000006"
+                            title="Meh">1
+                            star</label>
+                        <input type="radio" id="star0000000005" name="rating" value="5" /><label for="star0000000005"
+                            title="Meh">5
+                            stars</label>
+                        <input type="radio" id="star0000000004" name="rating" value="4" /><label for="star0000000004"
+                            title="Kinda bad">4
+                            stars</label>
+                        <input type="radio" id="star0000000003" name="rating" value="3" /><label for="star0000000003"
+                            title="Kinda bad">3
+                            stars</label>
+                        <input type="radio" id="star0000000002" name="rating" value="2" /><label for="star0000000002"
+                            title="Sucks big tim">2
+                            stars</label>
+                        <input type="radio" id="star0000000001" name="rating" value="1" /><label for="star0000000001"
+                            title="Sucks big time">1
+                            star</label>
+                    </div>
                 </div>
             </div>
+            <br>
+            <button class="continueStyling2" onclick="myFunctionFinish()">Next</button>
         </div>
-        <br>
-        <button class="continueStyling2" onclick="myFunctionFinish()">Next</button>
     </div>
-</div>
 
     <!--------------------------------------------------------- Finsih ---------------------------------------------------------->
 
@@ -911,6 +973,7 @@
     <span>
         <img src="man.png" class="man">
         <img src="boyBubble.png" class="boyBubble" />
+
         <div class="loginPageMargins">
             <div class="areStyling">Are</div>
             <div class='youStyling'>You </div>
@@ -927,6 +990,7 @@
     </span>
     <hr class="lineStyling">
     </hr>
+
     <div class="bottomScreenStyling">
         Self-Awareness Test
     </div>
@@ -947,7 +1011,7 @@
                 <a href="#" onclick="return myFunctionAbout();">
                     <li>About</li>
                 </a>
-                <a href="#">
+                <a href="#" onclick="return myFunctionContact();">
                     <li>Contact</li>
                 </a>
                 <a href="https://www.assessments24x7.com/" target="_blank">
@@ -957,49 +1021,53 @@
         </div>
     </nav>
 
-    <!------------------------------------------------------------- Login Modal -------------------------------------------------------->
+    <!--------------------------------------------------------- Login Modal -------------------------------------------------------->
 
-    <div id="id01" class="modal">
+    <div class="modalDiv">
+        <div id="id01" class="modal">
 
-        <form class="modal-content animate" action="/action_page.php" method="post">
-            <div class="imgcontainer">Welcome!
-                <span onclick="document.getElementById('id01').style.display='none'" class="close"
-                    title="Close Modal">&times;</span>
-                <!-- <img src="img_avatar2.png" alt="Avatar" class="avatar"> -->
-            </div>
+            <form class="modal-content animate" action="/#">
+                <div class="imgcontainer">Welcome!
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                        title="Close Modal">&times;</span>
+                    <!-- <img src="img_avatar2.png" alt="Avatar" class="avatar"> -->
+                </div>
 
-            <div class="container snap">
-                <label for="uname"><b>Username</b></label>
-                <input type="text" placeholder="Enter Name" name="uname" required>
+                <div class="container snap">
+                    <label for="uname"><b>Username</b></label>
+                    <input id='nameChange' type="text" placeholder="Enter Name" name="uname" required>
 
-                <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
 
-                <button type="submit" class="loginBtnStyling">Login</button>
-                <label>
-                    <input type="checkbox" checked="checked" name="remember"> Remember me
-                </label>
-            </div>
+                    <button type="submit" onclick="myFunctionNameChange(), myFunctionLoginClose()"
+                        class="loginBtnStyling">Login</button>
 
-            <div class="container snap">
-                <button type="button" onclick="document.getElementById('id01').style.display='none'"
-                    class="cancelbtn">Cancel</button>
-            </div>
-            <span class="psw">Forgot <a href="#">password?</a></span>
-        </form>
-    </div>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                </div>
 
-    <script>
-        // Get the modal
-        var modal = document.getElementById('id01');
+                <div class="container snap">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                        class="cancelbtn">Cancel</button>
+                </div>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </form>
+        </div>
 
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function (event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
+        <script>
+            // Get the modal
+            var modal = document.getElementById('id01');
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
             }
-        }
-    </script>
+        </script>
+    </div>
 
 
 </body>

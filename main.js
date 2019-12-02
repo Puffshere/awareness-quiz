@@ -1,7 +1,3 @@
-// function myFunctionWindow() {
-//     document.getElementById("panel").style.display = "block";
-// }
-
 function myFunction() {
     document.getElementById("panel").style.display = "block";
 }
@@ -12,6 +8,10 @@ function myFunctionClose() {
 
 function myFunctionCloseAbout() {
     document.getElementById("panel2").style.display = "none";
+}
+
+function myFunctionCloseContact() {
+    document.getElementById("panel3").style.display = "none";
 }
 
 function myFunctionStart() {
@@ -67,6 +67,18 @@ function myFunctionLogin() {
     document.getElementById("id01").style.display = "block"; 
 }
 
+function myFunctionLoginClose() {
+    document.getElementById("id01").style.display = "none"; 
+}
+
 function myFunctionAbout() {
     document.getElementById("panel2").style.display = "block";
 }
+
+function myFunctionContact() {
+    document.getElementById("panel3").style.display = "block";
+}
+
+function myFunctionNameChange() {
+    document.getElementById("nameChange").innerHTML = "Shawn";
+  }
