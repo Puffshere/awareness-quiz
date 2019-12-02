@@ -170,6 +170,33 @@ body {
     color: white;
 }
 
+.continueStyling2 {
+    margin-top: 3px;
+    background-image: linear-gradient(#aff5ef,#05978b);
+    border-radius: 5%;
+    box-shadow: 2px 2px 2px rgb(53, 52, 52);
+    text-shadow: 2px 2px 2px rgb(53, 52, 52);
+    color: white;
+    font-family: 'Special Elite', cursive;
+    padding-right: 15px;
+    padding-left: 12px;
+}
+
+.continueStyling2:hover {
+    background-image: linear-gradient(#aff5ef,#036d64);
+    border-radius: 5%;
+    box-shadow: 2px 2px 2px rgb(53, 52, 52);
+    text-shadow: 2px 2px 2px rgb(53, 52, 52);
+    color: white;
+}
+.continueStyling2:active {
+    background-image: linear-gradient(#aff5ef,#023531);
+    border-radius: 5%;
+    box-shadow: 2px 2px 2px rgb(53, 52, 52);
+    text-shadow: 2px 2px 2px rgb(53, 52, 52);
+    color: white;
+}
+
 .lineStyling {
     font-weight: bold;
     box-shadow: 2px 2px 2px black;
