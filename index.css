@@ -267,8 +267,13 @@ a {
   transition: color 0.3s ease;
 }
 
-a:hover
-{
+a:hover {
+  text-decoration: none;
+  color: #7c2b2b;
+}
+
+a:focus {
+  color: #585858;
   text-decoration: none;
 }
 
@@ -375,7 +380,7 @@ a:hover
 /*   -webkit-font-smoothing: antialiased; */
 /*   transform-origin: -100% 0%; */
   transform: translate(-800%, 0%);
-  
+  text-decoration: none;
   transition: transform 0.5s cubic-bezier(0.4, 0, 1, 1);
 }
 
@@ -411,6 +416,8 @@ a:hover
 {
   transform: none;
   color: #c5c4be;
+  text-decoration: none;
+  color: rgb(63, 21, 21);
 }
 
 .rating {
