@@ -70,13 +70,12 @@ function myFunctionFinish() {
     document.getElementById("finish").style.display = "block";
 }
 
-
 function myFunctionLogin() {
-    document.getElementById("id01").style.display = "block"; 
+    document.getElementById("id01").style.display = "block";
 }
 
 function myFunctionLoginClose() {
-    document.getElementById("id01").style.display = "none"; 
+    document.getElementById("id01").style.display = "none";
 }
 
 function myFunctionAbout() {
@@ -89,4 +88,4 @@ function myFunctionContact() {
 
 function myFunctionNameChange() {
     document.getElementById("nameChange").innerHTML = "Shawn";
-  }
+}

@@ -83,7 +83,7 @@ body {
 }
 
 .continueStyling {
-    margin-top: 3px;
+    margin-top: -10px;
     background-image: linear-gradient(#aff5ef,#05978b);
     border-radius: 5%;
     box-shadow: 2px 2px 2px rgb(53, 52, 52);
@@ -93,10 +93,10 @@ body {
     margin-bottom: 24px;
     padding-right: 15px;
     padding-left: 12px;
+    float: left;
 }
 
 .continueStyling:hover {
-    margin-top: 3px;
     background-image: linear-gradient(#aff5ef,#036d64);
     border-radius: 5%;
     box-shadow: 2px 2px 8px rgb(53, 52, 52);
@@ -104,7 +104,6 @@ body {
     color: white;
 }
 .continueStyling:active {
-    margin-top: 3px;
     background-image: linear-gradient(#aff5ef,#023531);
     border-radius: 5%;
     box-shadow: 2px 2px 2px rgb(53, 52, 52);
@@ -125,7 +124,7 @@ body {
     max-height: 35px;
     max-width: 58px;
     font-size: 15px;
-    /* margin-top: 25px; */
+    /* margin-top: -10px; */
     float: left;
 }
 
@@ -137,6 +136,38 @@ body {
     color: white;
 }
 .aboutStylingBtn:active {
+    background-image: linear-gradient(#aff5ef,#023531);
+    border-radius: 5%;
+    box-shadow: 2px 2px 2px rgb(53, 52, 52);
+    text-shadow: 2px 2px 2px rgb(53, 52, 52);
+    color: white;
+}
+
+.aboutStylingBtn1 {
+    background-image: linear-gradient(#aff5ef,#05978b);
+    border-radius: 5%;
+    box-shadow: 2px 2px 2px rgb(53, 52, 52);
+    text-shadow: 2px 2px 2px rgb(53, 52, 52);
+    color: white;
+    font-family: 'Special Elite', cursive;
+    /* margin-bottom: 24px; */
+    padding-right: 15px;
+    padding-left: 12px;
+    max-height: 35px;
+    max-width: 58px;
+    font-size: 15px;
+    margin-top: 7px;
+    float: left;
+}
+
+.aboutStylingBtn1:hover {
+    background-image: linear-gradient(#aff5ef,#036d64);
+    border-radius: 5%;
+    box-shadow: 2px 2px 8px rgb(53, 52, 52);
+    text-shadow: 2px 2px 6px rgb(53, 52, 52);
+    color: white;
+}
+.aboutStylingBtn1:active {
     background-image: linear-gradient(#aff5ef,#023531);
     border-radius: 5%;
     box-shadow: 2px 2px 2px rgb(53, 52, 52);
