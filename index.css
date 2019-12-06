@@ -15,7 +15,7 @@ body {
     border: 2px solid black;
     border-radius: 1%;
     box-shadow: 5px 5px 20px #2b0707;
-    z-index: -2;
+    z-index: 5;
     min-width: 235px;
 }
 
@@ -766,10 +766,10 @@ span.psw {
 }
 
 hr {
-margin-top: 5px;
-margin-bottom: 15px;
-border: 0;
-border-top: 1px solid #790707;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 0;
+    border-top: 1px solid #790707;
 }
 
 .card1Styling {
@@ -877,4 +877,37 @@ border-top: 1px solid #790707;
     max-width: 100px;
     margin-top: -90px;
     margin-left: 448px;
+}
+
+.inviteBtn {
+  background-image: linear-gradient(#aff5ef,#05978b);
+  border-radius: 5%;
+  box-shadow: 2px 2px 2px rgb(53, 52, 52);
+  text-shadow: 2px 2px 2px rgb(53, 52, 52);
+  color: white;
+  font-family: 'Special Elite', cursive;
+  /* margin-bottom: 24px; */
+  padding-right: 15px;
+  padding-left: 10px;
+  max-height: 35px;
+  max-width: 58px;
+  font-size: 15px;
+  /* margin-top: -10px; */
+  float: right;
+}
+
+.inviteBtn:hover {
+  background-image: linear-gradient(#aff5ef,#036d64);
+  border-radius: 5%;
+  box-shadow: 2px 2px 8px rgb(53, 52, 52);
+  text-shadow: 2px 2px 6px rgb(53, 52, 52);
+  color: white;
+}
+
+.inviteBtn:active {
+  background-image: linear-gradient(#aff5ef,#023531);
+  border-radius: 5%;
+  box-shadow: 2px 2px 2px rgb(53, 52, 52);
+  text-shadow: 2px 2px 2px rgb(53, 52, 52);
+  color: white;
 }
