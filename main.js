@@ -89,3 +89,7 @@ function myFunctionContact() {
 function myFunctionNameChange() {
     document.getElementById("nameChange").innerHTML = "Shawn";
 }
+
+function myFunctionInvite() {
+    document.getElementById("id02").style.display = "block";
+}
