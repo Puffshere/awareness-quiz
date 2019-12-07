@@ -78,6 +78,10 @@ function myFunctionLoginClose() {
     document.getElementById("id01").style.display = "none";
 }
 
+function myFunctionLoginCloseInvite() {
+    document.getElementById("id02").style.display = "none";
+}
+
 function myFunctionAbout() {
     document.getElementById("panel2").style.display = "block";
 }
