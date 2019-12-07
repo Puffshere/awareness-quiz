@@ -1177,37 +1177,33 @@
         </script>
     </div>
 
-<!--------------------------------------------------------- Invite model --------------------------------------------------------->
+    <!--------------------------------------------------------- Invite model --------------------------------------------------------->
 
-    <div class="modalDiv">
-        <div id="id02" class="modal">
+    <div class="modalDivInvite">
+        <div id="id02" class="modalInvite">
 
-            <form class="modal-content animate" action="/#">
-                <div class="imgcontainer">Welcome!
+            <form class="modal-content animate1" action="/#">
+                <div class="imgcontainerInvite">Invite friends!
                     <span onclick="document.getElementById('id02').style.display='none'" class="close"
                         title="Close Modal">&times;</span>
                 </div>
-
-                <div class="container snap">
-                    <label for="uname"><b>Username</b></label>
-                    <input id='nameChange' type="text" placeholder="Enter Name" name="uname" required>
-
-                    <label for="psw"><b>Password</b></label>
-                    <input type="password" placeholder="Enter Password" name="psw" required>
-
-                    <button type="submit" onclick="myFunctionLoginCloseInvite()"
-                        class="inviteBtn">Invite</button>
-
-                    <label>
-                        <input type="checkbox" checked="checked" name="remember"> Remember me
-                    </label>
-                </div>
-
-                <div class="container snap">
-                    <button type="button" onclick="document.getElementById('id02').style.display='none'"
-                        class="cancelbtn">Cancel</button>
-                </div>
                 
+                <div class="container snap1">
+                    <div id="inviteLine"><hr></hr></div>
+                    <label for="uname"><b>Email</b></label>
+                    <input id='nameChange' type="text" placeholder="Enter Email" name="uname" required>
+                    <label for="uname"><b>Email</b></label>
+                    <input id='nameChange' type="text" placeholder="Enter Email" name="uname" required>
+                    <label for="uname"><b>Email</b></label>
+                    <input id='nameChange' type="text" placeholder="Enter Email" name="uname" required>
+                    <hr></hr>
+                    <button type="submit" onclick="myFunctionLoginCloseInvite()" class="inviteBtn2">Invite</button>
+                    
+                    <div class="container snap">
+                        <button type="button" onclick="document.getElementById('id02').style.display='none'"
+                            class="cancelbtnInvite">Cancel</button>
+                    </div>
+
             </form>
         </div>
 
