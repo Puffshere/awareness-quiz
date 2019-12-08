@@ -97,3 +97,60 @@ function myFunctionNameChange() {
 function myFunctionInvite() {
     document.getElementById("id02").style.display = "block";
 }
+
+// function myFunctionQ1Rating(){
+//     console.log("this =" ,this)
+//     var userInput = this.value;
+//     console.log("userInput = " + userInput);
+// 	document.getElementById('intelligenceScore').innerHTML = userInput;
+// }
+
+function myFunctionOnClick1(value) {
+    var userInput = value;
+    document.getElementById('intelligenceScore').innerHTML = userInput;
+}
+
+function myFunctionOnClick2(value) {
+    var userInput2 = value;
+    document.getElementById('dependabilityScore').innerHTML = userInput2;
+}
+
+function myFunctionOnClick3(value) {
+    var userInput3 = value;
+    document.getElementById('looksScore').innerHTML = userInput3;
+}
+
+function myFunctionOnClick4(value) {
+    var userInput4 = value;
+    document.getElementById('fashionSenseScore').innerHTML = userInput4;
+}
+
+function myFunctionOnClick5(value) {
+    var userInput5 = value;
+    document.getElementById('selfawarenessScore').innerHTML = userInput5;
+}
+
+function myFunctionOnClick6(value) {
+    var userInput6 = value;
+    document.getElementById('humorScore').innerHTML = userInput6;
+}
+
+function myFunctionOnClick7(value) {
+    var userInput7 = value;
+    document.getElementById('streetSmartsScore').innerHTML = userInput7;
+}
+
+function myFunctionOnClick8(value) {
+    var userInput8 = value;
+    document.getElementById('charismaScore').innerHTML = userInput8;
+}
+
+function myFunctionOnClick9(value) {
+    var userInput9 = value;
+    document.getElementById('gritScore').innerHTML = userInput9;
+}
+
+function myFunctionOnClick10(value) {
+    var userInput10 = value;
+    document.getElementById('hygieneScore').innerHTML = userInput10;
+}

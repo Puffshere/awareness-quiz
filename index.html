@@ -510,61 +510,61 @@
                     <div class="card1Styling">
                         Intelligence:
                     </div>
-                    <div class="selfScoreStylingIntelligence">7</div>
+                    <div class="selfScoreStylingIntelligence" id="intelligenceScore">0</div>
                 </div>
                 <div class="card">
                     <div class="card2Styling">
                         Dependability:
                     </div>
-                    <div class="selfScoreStylingDependability">5</div>
+                    <div class="selfScoreStylingDependability" id="dependabilityScore">0</div>
                 </div>
                 <div class="card">
                     <div class="card3Styling">
                         Looks:
                     </div>
-                    <div class="selfScoreStylingLooks">7</div>
+                    <div class="selfScoreStylingLooks" id="looksScore">0</div>
                 </div>
                 <div class="card">
                     <div class="card4Styling">
                         Fashion Sense:
                     </div>
-                    <div class="selfScoreStylingFashionSense">8</div>
+                    <div class="selfScoreStylingFashionSense" id="fashionSenseScore">0</div>
                 </div>
                 <div class="card">
                     <div class="card5Styling">
                         Self-awareness:
                     </div>
-                    <div class="selfScoreStylingSelfawareness">6</div>
+                    <div class="selfScoreStylingSelfawareness" id="selfawarenessScore">0</div>
                 </div>
                 <div class="card">
                     <div class="card6Styling">
                         Humor:
                     </div>
-                    <div class="selfScoreStylingHumor">8</div>
+                    <div class="selfScoreStylingHumor" id="humorScore">0</div>
                 </div>
                 <div class="card">
                     <div class="card7Styling">
                         Street smarts:
                     </div>
-                    <div class="selfScoreStylingStreetSmarts">9</div>
+                    <div class="selfScoreStylingStreetSmarts" id="streetSmartsScore">0</div>
                 </div>
                 <div class="card">
                     <div class="card8Styling">
                         Charisma:
                     </div>
-                    <div class="selfScoreStylingCharisma">2</div>
+                    <div class="selfScoreStylingCharisma" id="charismaScore">0</div>
                 </div>
                 <div class="card">
                     <div class="card9Styling">
                         Grit:
                     </div>
-                    <div class="selfScoreStylingGrit">5</div>
+                    <div class="selfScoreStylingGrit" id="gritScore">0</div>
                 </div>
                 <div class="card">
                     <div class="card10Styling">
                         Hygiene:
                     </div>
-                    <div class="selfScoreStylingHygiene">8</div>
+                    <div class="selfScoreStylingHygiene" id="hygieneScore">0</div>
                 </div>
                 <div></div>
             </div>
@@ -630,30 +630,36 @@
             <br>
             <div class="container">
                 <div class="row">
-                    <div class="rating">
-                        <input type="radio" id="star10" name="rating" value="10" /><label for="star10" title="Rocks!">5
+                    <div class="rating" id="q1RatingId">
+                        <input type="radio" id="star10" name="rating" value="10"
+                            onclick="myFunctionOnClick1(this.value)" /><label for="star10" title="Rocks!">5
                             stars</label>
-                        <input type="radio" id="star9" name="rating" value="9" /><label for="star9" title="Rocks!">4
+                        <input type="radio" id="star9" name="rating" value="9"
+                            onclick="myFunctionOnClick1(this.value)" /><label for="star9" title="Rocks!">4
                             stars</label>
-                        <input type="radio" id="star8" name="rating" value="8" /><label for="star8"
-                            title="Pretty good">3
+                        <input type="radio" id="star8" name="rating" value="8"
+                            onclick="myFunctionOnClick1(this.value)" /><label for="star8" title="Pretty good">3
                             stars</label>
-                        <input type="radio" id="star7" name="rating" value="7" /><label for="star7"
-                            title="Pretty good">2
+                        <input type="radio" id="star7" name="rating" value="7"
+                            onclick="myFunctionOnClick1(this.value)" /><label for="star7" title="Pretty good">2
                             stars</label>
-                        <input type="radio" id="star6" name="rating" value="6" /><label for="star6" title="Meh">1
+                        <input type="radio" id="star6" name="rating" value="6"
+                            onclick="myFunctionOnClick1(this.value)" /><label for="star6" title="Meh">1
                             star</label>
-                        <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Meh">5
+                        <input type="radio" id="star5" name="rating" value="5"
+                            onclick="myFunctionOnClick1(this.value)" /><label for="star5" title="Meh">5
                             stars</label>
-                        <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Kinda bad">4
+                        <input type="radio" id="star4" name="rating" value="4"
+                            onclick="myFunctionOnClick1(this.value)" /><label for="star4" title="Kinda bad">4
                             stars</label>
-                        <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Kinda bad">3
+                        <input type="radio" id="star3" name="rating" value="3"
+                            onclick="myFunctionOnClick1(this.value)" /><label for="star3" title="Kinda bad">3
                             stars</label>
-                        <input type="radio" id="star2" name="rating" value="2" /><label for="star2"
-                            title="Sucks big tim">2
+                        <input type="radio" id="star2" name="rating" value="2"
+                            onclick="myFunctionOnClick1(this.value)" /><label for="star2" title="Sucks big tim">2
                             stars</label>
-                        <input type="radio" id="star1" name="rating" value="1" /><label for="star1"
-                            title="Sucks big time">1
+                        <input type="radio" id="star1" name="rating" value="1"
+                            onclick="myFunctionOnClick1(this.value)" /><label for="star1" title="Sucks big time">1
                             star</label>
                     </div>
                 </div>
@@ -670,32 +676,32 @@
             <br>
             <div class="container">
                 <div class="row">
-                    <div class="rating">
-                        <input type="radio" id="star010" name="rating" value="10" /><label for="star010"
+                    <div class="rating" id="q2RatingId">
+                            <input type="radio" id="star010" name="rating" value="10" onclick="myFunctionOnClick2(this.value)" /><label for="star0010"
                             title="Rocks!">5
                             stars</label>
-                        <input type="radio" id="star09" name="rating" value="9" /><label for="star09" title="Rocks!">4
+                        <input type="radio" id="star09" name="rating" value="9" onclick="myFunctionOnClick2(this.value)" /><label for="star09" title="Rocks!">4
                             stars</label>
-                        <input type="radio" id="star08" name="rating" value="8" /><label for="star08"
+                        <input type="radio" id="star08" name="rating" value="8" onclick="myFunctionOnClick2(this.value)" /><label for="star08"
                             title="Pretty good">3
                             stars</label>
-                        <input type="radio" id="star07" name="rating" value="7" /><label for="star07"
+                        <input type="radio" id="star07" name="rating" value="7" onclick="myFunctionOnClick2(this.value)" /><label for="star07"
                             title="Pretty good">2
                             stars</label>
-                        <input type="radio" id="star06" name="rating" value="6" /><label for="star06" title="Meh">1
+                        <input type="radio" id="star06" name="rating" value="6" onclick="myFunctionOnClick2(this.value)" /><label for="star06" title="Meh">1
                             star</label>
-                        <input type="radio" id="star05" name="rating" value="5" /><label for="star05" title="Meh">5
+                        <input type="radio" id="star05" name="rating" value="5" onclick="myFunctionOnClick2(this.value)" /><label for="star05" title="Meh">5
                             stars</label>
-                        <input type="radio" id="star04" name="rating" value="4" /><label for="star04"
+                        <input type="radio" id="star04" name="rating" value="4" onclick="myFunctionOnClick2(this.value)" /><label for="star04"
                             title="Kinda bad">4
                             stars</label>
-                        <input type="radio" id="star03" name="rating" value="3" /><label for="star03"
+                        <input type="radio" id="star03" name="rating" value="3" onclick="myFunctionOnClick2(this.value)" /><label for="star03"
                             title="Kinda bad">3
                             stars</label>
-                        <input type="radio" id="star02" name="rating" value="2" /><label for="star02"
+                        <input type="radio" id="star02" name="rating" value="2" onclick="myFunctionOnClick2(this.value)" /><label for="star02"
                             title="Sucks big tim">2
                             stars</label>
-                        <input type="radio" id="star01" name="rating" value="1" /><label for="star01"
+                        <input type="radio" id="star01" name="rating" value="1" onclick="myFunctionOnClick2(this.value)" /><label for="star01"
                             title="Sucks big time">1
                             star</label>
                     </div>
@@ -714,28 +720,28 @@
             <div class="container">
                 <div class="row">
                     <div class="rating">
-                        <input type="radio" id="star0010" name="rating" value="10" /><label for="star0010"
+                        <input type="radio" id="star0010" name="rating" value="10" onclick="myFunctionOnClick3(this.value)"/><label for="star0010"
                             title="Rocks!">5
                             stars</label>
-                        <input type="radio" id="star009" name="rating" value="9" /><label for="star009" title="Rocks!">4
+                        <input type="radio" id="star009" name="rating" value="9" onclick="myFunctionOnClick3(this.value)"/><label for="star009" title="Rocks!">4
                             stars</label>
-                        <input type="radio" id="star008" name="rating" value="8" /><label for="star008"
+                        <input type="radio" id="star008" name="rating" value="8" onclick="myFunctionOnClick3(this.value)"/><label for="star008"
                             title="Pretty good">3
                             stars</label>
-                        <input type="radio" id="star007" name="rating" value="7" /><label for="star007"
+                        <input type="radio" id="star007" name="rating" value="7" onclick="myFunctionOnClick3(this.value)"/><label for="star007"
                             title="Pretty good">2
                             stars</label>
-                        <input type="radio" id="star006" name="rating" value="6" /><label for="star006" title="Meh">1
+                        <input type="radio" id="star006" name="rating" value="6" onclick="myFunctionOnClick3(this.value)"/><label for="star006" title="Meh">1
                             star</label>
-                        <input type="radio" id="star005" name="rating" value="5" /><label for="star005" title="Meh">5
+                        <input type="radio" id="star005" name="rating" value="5" onclick="myFunctionOnClick3(this.value)"/><label for="star005" title="Meh">5
                             stars</label>
-                        <input type="radio" id="star004" name="rating" value="4" /><label for="star004"
+                        <input type="radio" id="star004" name="rating" value="4" onclick="myFunctionOnClick3(this.value)"/><label for="star004"
                             title="Kinda bad">4
                             stars</label>
-                        <input type="radio" id="star003" name="rating" value="3" /><label for="star003"
+                        <input type="radio" id="star003" name="rating" value="3" onclick="myFunctionOnClick3(this.value)"/><label for="star003"
                             title="Kinda bad">3
                             stars</label>
-                        <input type="radio" id="star002" name="rating" value="2" /><label for="star002"
+                        <input type="radio" id="star002" name="rating" value="2" onclick="myFunctionOnClick3(this.value)"/><label for="star002"
                             title="Sucks big tim">2
                             stars</label>
                         <input type="radio" id="star001" name="rating" value="1" /><label for="star001"
@@ -757,32 +763,32 @@
             <div class="container">
                 <div class="row">
                     <div class="rating">
-                        <input type="radio" id="star00010" name="rating" value="10" /><label for="star00010"
+                        <input type="radio" id="star00010" name="rating" value="10" onclick="myFunctionOnClick4(this.value)"/><label for="star00010"
                             title="Rocks!">5
                             stars</label>
-                        <input type="radio" id="star0009" name="rating" value="9" /><label for="star0009"
+                        <input type="radio" id="star0009" name="rating" value="9" onclick="myFunctionOnClick4(this.value)"/><label for="star0009"
                             title="Rocks!">4
                             stars</label>
-                        <input type="radio" id="star0008" name="rating" value="8" /><label for="star0008"
+                        <input type="radio" id="star0008" name="rating" value="8" onclick="myFunctionOnClick4(this.value)"/><label for="star0008"
                             title="Pretty good">3
                             stars</label>
-                        <input type="radio" id="star0007" name="rating" value="7" /><label for="star0007"
+                        <input type="radio" id="star0007" name="rating" value="7" onclick="myFunctionOnClick4(this.value)"/><label for="star0007"
                             title="Pretty good">2
                             stars</label>
-                        <input type="radio" id="star0006" name="rating" value="6" /><label for="star0006" title="Meh">1
+                        <input type="radio" id="star0006" name="rating" value="6" onclick="myFunctionOnClick4(this.value)"/><label for="star0006" title="Meh">1
                             star</label>
-                        <input type="radio" id="star0005" name="rating" value="5" /><label for="star0005" title="Meh">5
+                        <input type="radio" id="star0005" name="rating" value="5" onclick="myFunctionOnClick4(this.value)"/><label for="star0005" title="Meh">5
                             stars</label>
-                        <input type="radio" id="star0004" name="rating" value="4" /><label for="star0004"
+                        <input type="radio" id="star0004" name="rating" value="4" onclick="myFunctionOnClick4(this.value)"/><label for="star0004"
                             title="Kinda bad">4
                             stars</label>
-                        <input type="radio" id="star0003" name="rating" value="3" /><label for="star0003"
+                        <input type="radio" id="star0003" name="rating" value="3" onclick="myFunctionOnClick4(this.value)"/><label for="star0003"
                             title="Kinda bad">3
                             stars</label>
-                        <input type="radio" id="star0002" name="rating" value="2" /><label for="star0002"
+                        <input type="radio" id="star0002" name="rating" value="2" onclick="myFunctionOnClick4(this.value)"/><label for="star0002"
                             title="Sucks big tim">2
                             stars</label>
-                        <input type="radio" id="star0001" name="rating" value="1" /><label for="star0001"
+                        <input type="radio" id="star0001" name="rating" value="1" onclick="myFunctionOnClick4(this.value)"/><label for="star0001"
                             title="Sucks big time">1
                             star</label>
                     </div>
@@ -801,34 +807,34 @@
             <div class="container">
                 <div class="row">
                     <div class="rating">
-                        <input type="radio" id="star000010" name="rating" value="10" /><label for="star000010"
+                        <input type="radio" id="star000010" name="rating" value="10" onclick="myFunctionOnClick5(this.value)"/><label for="star000010"
                             title="Rocks!">5
                             stars</label>
-                        <input type="radio" id="star00009" name="rating" value="9" /><label for="star00009"
+                        <input type="radio" id="star00009" name="rating" value="9" onclick="myFunctionOnClick5(this.value)"/><label for="star00009"
                             title="Rocks!">4
                             stars</label>
-                        <input type="radio" id="star00008" name="rating" value="8" /><label for="star00008"
+                        <input type="radio" id="star00008" name="rating" value="8" onclick="myFunctionOnClick5(this.value)"/><label for="star00008"
                             title="Pretty good">3
                             stars</label>
-                        <input type="radio" id="star00007" name="rating" value="7" /><label for="star00007"
+                        <input type="radio" id="star00007" name="rating" value="7" onclick="myFunctionOnClick5(this.value)"/><label for="star00007"
                             title="Pretty good">2
                             stars</label>
-                        <input type="radio" id="star00006" name="rating" value="6" /><label for="star00006"
+                        <input type="radio" id="star00006" name="rating" value="6" onclick="myFunctionOnClick5(this.value)"/><label for="star00006"
                             title="Meh">1
                             star</label>
-                        <input type="radio" id="star00005" name="rating" value="5" /><label for="star00005"
+                        <input type="radio" id="star00005" name="rating" value="5" onclick="myFunctionOnClick5(this.value)"/><label for="star00005"
                             title="Meh">5
                             stars</label>
-                        <input type="radio" id="star00004" name="rating" value="4" /><label for="star00004"
+                        <input type="radio" id="star00004" name="rating" value="4" onclick="myFunctionOnClick5(this.value)"/><label for="star00004"
                             title="Kinda bad">4
                             stars</label>
-                        <input type="radio" id="star00003" name="rating" value="3" /><label for="star00003"
+                        <input type="radio" id="star00003" name="rating" value="3" onclick="myFunctionOnClick5(this.value)"/><label for="star00003"
                             title="Kinda bad">3
                             stars</label>
-                        <input type="radio" id="star00002" name="rating" value="2" /><label for="star00002"
+                        <input type="radio" id="star00002" name="rating" value="2" onclick="myFunctionOnClick5(this.value)"/><label for="star00002"
                             title="Sucks big tim">2
                             stars</label>
-                        <input type="radio" id="star00001" name="rating" value="1" /><label for="star00001"
+                        <input type="radio" id="star00001" name="rating" value="1" onclick="myFunctionOnClick5(this.value)"/><label for="star00001"
                             title="Sucks big time">1
                             star</label>
                     </div>
@@ -847,34 +853,34 @@
             <div class="container">
                 <div class="row">
                     <div class="rating">
-                        <input type="radio" id="star0000010" name="rating" value="10" /><label for="star0000010"
+                        <input type="radio" id="star0000010" name="rating" value="10" onclick="myFunctionOnClick6(this.value)"/><label for="star0000010"
                             title="Rocks!">5
                             stars</label>
-                        <input type="radio" id="star000009" name="rating" value="9" /><label for="star000009"
+                        <input type="radio" id="star000009" name="rating" value="9" onclick="myFunctionOnClick6(this.value)"/><label for="star000009"
                             title="Rocks!">4
                             stars</label>
-                        <input type="radio" id="star000008" name="rating" value="8" /><label for="star000008"
+                        <input type="radio" id="star000008" name="rating" value="8" onclick="myFunctionOnClick6(this.value)"/><label for="star000008"
                             title="Pretty good">3
                             stars</label>
-                        <input type="radio" id="star000007" name="rating" value="7" /><label for="star000007"
+                        <input type="radio" id="star000007" name="rating" value="7" onclick="myFunctionOnClick6(this.value)"/><label for="star000007"
                             title="Pretty good">2
                             stars</label>
-                        <input type="radio" id="star000006" name="rating" value="6" /><label for="star000006"
+                        <input type="radio" id="star000006" name="rating" value="6" onclick="myFunctionOnClick6(this.value)"/><label for="star000006"
                             title="Meh">1
                             star</label>
-                        <input type="radio" id="star000005" name="rating" value="5" /><label for="star000005"
+                        <input type="radio" id="star000005" name="rating" value="5" onclick="myFunctionOnClick6(this.value)"/><label for="star000005"
                             title="Meh">5
                             stars</label>
-                        <input type="radio" id="star000004" name="rating" value="4" /><label for="star000004"
+                        <input type="radio" id="star000004" name="rating" value="4" onclick="myFunctionOnClick6(this.value)"/><label for="star000004"
                             title="Kinda bad">4
                             stars</label>
-                        <input type="radio" id="star000003" name="rating" value="3" /><label for="star000003"
+                        <input type="radio" id="star000003" name="rating" value="3" onclick="myFunctionOnClick6(this.value)"/><label for="star000003"
                             title="Kinda bad">3
                             stars</label>
-                        <input type="radio" id="star000002" name="rating" value="2" /><label for="star000002"
+                        <input type="radio" id="star000002" name="rating" value="2" onclick="myFunctionOnClick6(this.value)"/><label for="star000002"
                             title="Sucks big tim">2
                             stars</label>
-                        <input type="radio" id="star000001" name="rating" value="1" /><label for="star000001"
+                        <input type="radio" id="star000001" name="rating" value="1" onclick="myFunctionOnClick6(this.value)"/><label for="star000001"
                             title="Sucks big time">1
                             star</label>
                     </div>
@@ -893,34 +899,34 @@
             <div class="container">
                 <div class="row">
                     <div class="rating">
-                        <input type="radio" id="star00000010" name="rating" value="10" /><label for="star00000010"
+                        <input type="radio" id="star00000010" name="rating" value="10" onclick="myFunctionOnClick7(this.value)"/><label for="star00000010"
                             title="Rocks!">5
                             stars</label>
-                        <input type="radio" id="star0000009" name="rating" value="9" /><label for="star0000009"
+                        <input type="radio" id="star0000009" name="rating" value="9" onclick="myFunctionOnClick7(this.value)"/><label for="star0000009"
                             title="Rocks!">4
                             stars</label>
-                        <input type="radio" id="star0000008" name="rating" value="8" /><label for="star0000008"
+                        <input type="radio" id="star0000008" name="rating" value="8" onclick="myFunctionOnClick7(this.value)"/><label for="star0000008"
                             title="Pretty good">3
                             stars</label>
-                        <input type="radio" id="star0000007" name="rating" value="7" /><label for="star0000007"
+                        <input type="radio" id="star0000007" name="rating" value="7" onclick="myFunctionOnClick7(this.value)"/><label for="star0000007"
                             title="Pretty good">2
                             stars</label>
-                        <input type="radio" id="star0000006" name="rating" value="6" /><label for="star0000006"
+                        <input type="radio" id="star0000006" name="rating" value="6" onclick="myFunctionOnClick7(this.value)"/><label for="star0000006"
                             title="Meh">1
                             star</label>
-                        <input type="radio" id="star0000005" name="rating" value="5" /><label for="star0000005"
+                        <input type="radio" id="star0000005" name="rating" value="5" onclick="myFunctionOnClick7(this.value)"/><label for="star0000005"
                             title="Meh">5
                             stars</label>
-                        <input type="radio" id="star0000004" name="rating" value="4" /><label for="star0000004"
+                        <input type="radio" id="star0000004" name="rating" value="4" onclick="myFunctionOnClick7(this.value)"/><label for="star0000004"
                             title="Kinda bad">4
                             stars</label>
-                        <input type="radio" id="star0000003" name="rating" value="3" /><label for="star0000003"
+                        <input type="radio" id="star0000003" name="rating" value="3" onclick="myFunctionOnClick7(this.value)"/><label for="star0000003"
                             title="Kinda bad">3
                             stars</label>
-                        <input type="radio" id="star0000002" name="rating" value="2" /><label for="star0000002"
+                        <input type="radio" id="star0000002" name="rating" value="2" onclick="myFunctionOnClick7(this.value)"/><label for="star0000002"
                             title="Sucks big tim">2
                             stars</label>
-                        <input type="radio" id="star0000001" name="rating" value="1" /><label for="star0000001"
+                        <input type="radio" id="star0000001" name="rating" value="1" onclick="myFunctionOnClick7(this.value)"/><label for="star0000001"
                             title="Sucks big time">1
                             star</label>
                     </div>
@@ -939,34 +945,34 @@
             <div class="container">
                 <div class="row">
                     <div class="rating">
-                        <input type="radio" id="star000000010" name="rating" value="10" /><label for="star000000010"
+                        <input type="radio" id="star000000010" name="rating" value="10" onclick="myFunctionOnClick8(this.value)"/><label for="star000000010"
                             title="Rocks!">5
                             stars</label>
-                        <input type="radio" id="star00000009" name="rating" value="9" /><label for="star00000009"
+                        <input type="radio" id="star00000009" name="rating" value="9" onclick="myFunctionOnClick8(this.value)"/><label for="star00000009"
                             title="Rocks!">4
                             stars</label>
-                        <input type="radio" id="star00000008" name="rating" value="8" /><label for="star00000008"
+                        <input type="radio" id="star00000008" name="rating" value="8" onclick="myFunctionOnClick8(this.value)"/><label for="star00000008"
                             title="Pretty good">3
                             stars</label>
-                        <input type="radio" id="star00000007" name="rating" value="7" /><label for="star00000007"
+                        <input type="radio" id="star00000007" name="rating" value="7" onclick="myFunctionOnClick8(this.value)"/><label for="star00000007"
                             title="Pretty good">2
                             stars</label>
-                        <input type="radio" id="star00000006" name="rating" value="6" /><label for="star00000006"
+                        <input type="radio" id="star00000006" name="rating" value="6" onclick="myFunctionOnClick8(this.value)"/><label for="star00000006"
                             title="Meh">1
                             star</label>
-                        <input type="radio" id="star00000005" name="rating" value="5" /><label for="star00000005"
+                        <input type="radio" id="star00000005" name="rating" value="5" onclick="myFunctionOnClick8(this.value)"/><label for="star00000005"
                             title="Meh">5
                             stars</label>
-                        <input type="radio" id="star00000004" name="rating" value="4" /><label for="star00000004"
+                        <input type="radio" id="star00000004" name="rating" value="4" onclick="myFunctionOnClick8(this.value)"/><label for="star00000004"
                             title="Kinda bad">4
                             stars</label>
-                        <input type="radio" id="star00000003" name="rating" value="3" /><label for="star00000003"
+                        <input type="radio" id="star00000003" name="rating" value="3" onclick="myFunctionOnClick8(this.value)"/><label for="star00000003"
                             title="Kinda bad">3
                             stars</label>
-                        <input type="radio" id="star00000002" name="rating" value="2" /><label for="star00000002"
+                        <input type="radio" id="star00000002" name="rating" value="2" onclick="myFunctionOnClick8(this.value)"/><label for="star00000002"
                             title="Sucks big tim">2
                             stars</label>
-                        <input type="radio" id="star00000001" name="rating" value="1" /><label for="star00000001"
+                        <input type="radio" id="star00000001" name="rating" value="1" onclick="myFunctionOnClick8(this.value)"/><label for="star00000001"
                             title="Sucks big time">1
                             star</label>
                     </div>
@@ -985,34 +991,34 @@
             <div class="container">
                 <div class="row">
                     <div class="rating">
-                        <input type="radio" id="star0000000010" name="rating" value="10" /><label for="star0000000010"
+                        <input type="radio" id="star0000000010" name="rating" value="10" onclick="myFunctionOnClick9(this.value)"/><label for="star0000000010"
                             title="Rocks!">5
                             stars</label>
-                        <input type="radio" id="star000000009" name="rating" value="9" /><label for="star000000009"
+                        <input type="radio" id="star000000009" name="rating" value="9" onclick="myFunctionOnClick9(this.value)"/><label for="star000000009"
                             title="Rocks!">4
                             stars</label>
-                        <input type="radio" id="star000000008" name="rating" value="8" /><label for="star000000008"
+                        <input type="radio" id="star000000008" name="rating" value="8" onclick="myFunctionOnClick9(this.value)"/><label for="star000000008"
                             title="Pretty good">3
                             stars</label>
-                        <input type="radio" id="star000000007" name="rating" value="7" /><label for="star000000007"
+                        <input type="radio" id="star000000007" name="rating" value="7" onclick="myFunctionOnClick9(this.value)"/><label for="star000000007"
                             title="Pretty good">2
                             stars</label>
-                        <input type="radio" id="star000000006" name="rating" value="6" /><label for="star000000006"
+                        <input type="radio" id="star000000006" name="rating" value="6" onclick="myFunctionOnClick9(this.value)"/><label for="star000000006"
                             title="Meh">1
                             star</label>
-                        <input type="radio" id="star000000005" name="rating" value="5" /><label for="star000000005"
+                        <input type="radio" id="star000000005" name="rating" value="5" onclick="myFunctionOnClick9(this.value)"/><label for="star000000005"
                             title="Meh">5
                             stars</label>
-                        <input type="radio" id="star000000004" name="rating" value="4" /><label for="star000000004"
+                        <input type="radio" id="star000000004" name="rating" value="4" onclick="myFunctionOnClick9(this.value)"/><label for="star000000004"
                             title="Kinda bad">4
                             stars</label>
-                        <input type="radio" id="star000000003" name="rating" value="3" /><label for="star000000003"
+                        <input type="radio" id="star000000003" name="rating" value="3" onclick="myFunctionOnClick9(this.value)"/><label for="star000000003"
                             title="Kinda bad">3
                             stars</label>
-                        <input type="radio" id="star000000002" name="rating" value="2" /><label for="star000000002"
+                        <input type="radio" id="star000000002" name="rating" value="2" onclick="myFunctionOnClick9(this.value)"/><label for="star000000002"
                             title="Sucks big tim">2
                             stars</label>
-                        <input type="radio" id="star000000001" name="rating" value="1" /><label for="star000000001"
+                        <input type="radio" id="star000000001" name="rating" value="1" onclick="myFunctionOnClick9(this.value)"/><label for="star000000001"
                             title="Sucks big time">1
                             star</label>
                     </div>
@@ -1031,34 +1037,34 @@
             <div class="container">
                 <div class="row">
                     <div class="rating">
-                        <input type="radio" id="star00000000010" name="rating" value="10" /><label for="star00000000010"
+                        <input type="radio" id="star00000000010" name="rating" value="10" onclick="myFunctionOnClick10(this.value)"/><label for="star00000000010"
                             title="Rocks!">5
                             stars</label>
-                        <input type="radio" id="star0000000009" name="rating" value="9" /><label for="star0000000009"
+                        <input type="radio" id="star0000000009" name="rating" value="9" onclick="myFunctionOnClick10(this.value)"/><label for="star0000000009"
                             title="Rocks!">4
                             stars</label>
-                        <input type="radio" id="star0000000008" name="rating" value="8" /><label for="star0000000008"
+                        <input type="radio" id="star0000000008" name="rating" value="8" onclick="myFunctionOnClick10(this.value)"/><label for="star0000000008"
                             title="Pretty good">3
                             stars</label>
-                        <input type="radio" id="star0000000007" name="rating" value="7" /><label for="star0000000007"
+                        <input type="radio" id="star0000000007" name="rating" value="7" onclick="myFunctionOnClick10(this.value)"/><label for="star0000000007"
                             title="Pretty good">2
                             stars</label>
-                        <input type="radio" id="star0000000006" name="rating" value="6" /><label for="star0000000006"
+                        <input type="radio" id="star0000000006" name="rating" value="6" onclick="myFunctionOnClick10(this.value)"/><label for="star0000000006"
                             title="Meh">1
                             star</label>
-                        <input type="radio" id="star0000000005" name="rating" value="5" /><label for="star0000000005"
+                        <input type="radio" id="star0000000005" name="rating" value="5" onclick="myFunctionOnClick10(this.value)"/><label for="star0000000005"
                             title="Meh">5
                             stars</label>
-                        <input type="radio" id="star0000000004" name="rating" value="4" /><label for="star0000000004"
+                        <input type="radio" id="star0000000004" name="rating" value="4" onclick="myFunctionOnClick10(this.value)"/><label for="star0000000004"
                             title="Kinda bad">4
                             stars</label>
-                        <input type="radio" id="star0000000003" name="rating" value="3" /><label for="star0000000003"
+                        <input type="radio" id="star0000000003" name="rating" value="3" onclick="myFunctionOnClick10(this.value)"/><label for="star0000000003"
                             title="Kinda bad">3
                             stars</label>
-                        <input type="radio" id="star0000000002" name="rating" value="2" /><label for="star0000000002"
+                        <input type="radio" id="star0000000002" name="rating" value="2" onclick="myFunctionOnClick10(this.value)"/><label for="star0000000002"
                             title="Sucks big tim">2
                             stars</label>
-                        <input type="radio" id="star0000000001" name="rating" value="1" /><label for="star0000000001"
+                        <input type="radio" id="star0000000001" name="rating" value="1" onclick="myFunctionOnClick10(this.value)"/><label for="star0000000001"
                             title="Sucks big time">1
                             star</label>
                     </div>
