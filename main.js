@@ -90,20 +90,9 @@ function myFunctionContact() {
     document.getElementById("panel3").style.display = "block";
 }
 
-function myFunctionNameChange() {
-    document.getElementById("nameChange").innerHTML = "Shawn";
-}
-
 function myFunctionInvite() {
     document.getElementById("id02").style.display = "block";
 }
-
-// function myFunctionQ1Rating(){
-//     console.log("this =" ,this)
-//     var userInput = this.value;
-//     console.log("userInput = " + userInput);
-// 	document.getElementById('intelligenceScore').innerHTML = userInput;
-// }
 
 function myFunctionOnClick1(value) {
     var userInput = value;
@@ -153,4 +142,29 @@ function myFunctionOnClick9(value) {
 function myFunctionOnClick10(value) {
     var userInput10 = value;
     document.getElementById('hygieneScore').innerHTML = userInput10;
+}
+
+var users = [
+    {
+        username: "Shawn",
+        password: "tupac"
+    },
+    {
+        username: "Jessica",
+        password: "password"
+    }
+]
+
+function myFunctionGetInfo() {
+    var username = document.getElementById('username').value
+    var password = document.getElementById('password').value
+    var i = 0
+    for(i = 0; i < users.length; i++) {
+        if(username == users[i].username && password == users[i].password) {
+            alert(username + " is logged in!")
+            document.getElementById("loggedIn").innerHTML = username;
+            return;
+        }
+    }
+    alert("incorrect username or password")
 }

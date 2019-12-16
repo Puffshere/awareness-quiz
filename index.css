@@ -787,8 +787,8 @@ span.psw {
 
 .loginPlaceHolder {
     float: right;
-    position: inherit;
-    z-index: 5;
+    position: relative;
+    z-index: 2;
     margin-right: 30px;
     margin-top: -10px;
     font-family: 'Special Elite', cursive;
