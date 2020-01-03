@@ -76,6 +76,7 @@ function myFunctionLogin() {
 
 function myFunctionLoginClose() {
     document.getElementById("id01").style.display = "none";
+    document.loginForm.reset("username");
 }
 
 function myFunctionLoginCloseInvite() {
@@ -155,6 +156,8 @@ var users = [
     }
 ]
 
+
+
 function myFunctionGetInfo() {
     var username = document.getElementById('username').value
     var password = document.getElementById('password').value
@@ -162,7 +165,15 @@ function myFunctionGetInfo() {
     for(i = 0; i < users.length; i++) {
         if(username == users[i].username && password == users[i].password) {
             alert(username + " is logged in!")
+
             document.getElementById("loggedIn").innerHTML = username;
+            
+
+            
+
+           
+
+
             return;
         }
     }

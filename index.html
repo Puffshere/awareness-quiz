@@ -1154,7 +1154,7 @@
     <div class="modalDiv">
         <div id="id01" class="modal">
 
-            <form class="modal-content animate" action="/#">
+            <form name="loginForm" class="modal-content animate" action="/#">
                 <div class="imgcontainer">Welcome!
                     <span onclick="document.getElementById('id01').style.display='none'" class="close"
                         title="Close Modal">&times;</span>
@@ -1171,9 +1171,11 @@
                     <button type="submit" onclick="myFunctionGetInfo(), myFunctionLoginClose()"
                         class="loginBtnStyling">Login</button>
 
-                    <label>
+    
+
+                    <!-- <label>
                         <input type="checkbox" checked="checked" name="remember"> Remember me
-                    </label>
+                    </label> -->
                 </div>
 
                 <div class="container snap">
@@ -1196,6 +1198,21 @@
             }
         </script>
     </div>
+
+
+    <!-- <script type="text/javascript">
+        $('p').append(Math.random());
+    
+        $(window).bind({
+            beforeunload: function(ev) {
+                ev.preventDefault();
+            },
+            unload: function(ev) {
+                ev.preventDefault();
+            }
+        });
+    </script> -->
+    
 
     <!--------------------------------------------------------- Invite model --------------------------------------------------------->
 
